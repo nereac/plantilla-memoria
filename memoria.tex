@@ -229,7 +229,7 @@ El videojuego es la primera opción de ocio de los españoles, más concretamente e
 
 Esto me ha llevado a comprobar el reto que supone la realización de un videojuego. El tipo de juego elegido es un juego de guerra de estrategia, en tiempo real, multijugador y online. Cada jugador se enfrentará a los demás jugadores. Cada uno de ellos dispondrá de una ciudad, la cual tendrá que desarrollar y proteger del resto de jugadores
 
-El juego debe ser capaz de dar acceso a gran cantidad de usuarios y proporcionar soporte en múltiples idiomas. Para la realización se han escogido tecnologías que se han popularizado bastante estos últimos años, y que me gustaría poder llegar a conocer bien, como son Nodejs y Angular. Además Node proporciona altas concurrencias lo que es adecuado para el juego.
+El juego debe ser capaz de dar acceso a gran cantidad de usuarios y proporcionar soporte en múltiples idiomas. Para la realización se han escogido tecnologías que se han popularizado bastante estos últimos años, y que me gustaría poder llegar a conocer bien, como son Nodejs y Angular. Además Node proporciona altas concurrencias, lo que es adecuado para el juego.
 
 \section{Estructura de la memoria}
 \label{sec:estructura}
@@ -237,12 +237,12 @@ El juego debe ser capaz de dar acceso a gran cantidad de usuarios y proporcionar
 La memoria está estructurada de la siguiente manera:
 
 \begin{itemize}
- \item \textbf{Capítulo \ref{chap:intro}. Introducción:} en este primer capítulo se realiza una descripción general del proyecto, especificando la estructura del mismo.
- \item \textbf{Capítulo \ref{chap:objetivos}. Objetivos:} se exponen los objetivos que se pretenden conseguir con la realización de este proyecto.
- \item \textbf{Capítulo \ref{chap:arte}. Estado del arte:} contiene una descripción de las tecnologías utilizadas para desarrollar la aplicación.
- \item \textbf{Capítulo \ref{chap:implementacion}. Diseño e implementación:} este capítulo se explica el funcionamiento de la aplicación y cómo ha sido diseñada y desarrollada.
- \item \textbf{Capítulo \ref{chap:resultados}. Resultados:} se realiza un análisis de los resultados obtenidos.
- \item \textbf{Capítulo \ref{chap:conclusiones}. Conclusiones:} conclusiones tras la realización del proyecto.
+ \item \textbf{Capítulo~\ref{chap:intro}. Introducción:} en este primer capítulo se realiza una descripción general del proyecto, especificando la estructura del mismo.
+ \item \textbf{Capítulo~\ref{chap:objetivos}. Objetivos:} se exponen los objetivos que se pretenden conseguir con la realización de este proyecto.
+ \item \textbf{Capítulo~\ref{chap:arte}. Estado del arte:} contiene una descripción de las tecnologías utilizadas para desarrollar la aplicación.
+ \item \textbf{Capítulo~\ref{chap:implementacion}. Diseño e implementación:} este capítulo se explica el funcionamiento de la aplicación y cómo ha sido diseñada y desarrollada.
+ \item \textbf{Capítulo~\ref{chap:resultados}. Resultados:} se realiza un análisis de los resultados obtenidos.
+ \item \textbf{Capítulo~\ref{chap:conclusiones}. Conclusiones:} conclusiones tras la realización del proyecto.
 \end{itemize}
 
 
@@ -661,7 +661,7 @@ La tabla \textit{reports} se utiliza para almacenar la información de los ataque
 
 \subsection{Estructura del servidor}
 \label{subsec:servidor.estructura}
-El servidor está estructurado, de manera sencilla, como se muestra en la imagen \ref{fig:esquemaServidor}.
+El servidor está estructurado, de manera sencilla, como se muestra en la imagen~\ref{fig:esquemaServidor}.
 
 \begin{figure}[H]
   \centering
@@ -670,7 +670,7 @@ El servidor está estructurado, de manera sencilla, como se muestra en la imagen 
   \label{fig:esquemaServidor}
 \end{figure}
 
-El archivo de Node llamado \textbf{package.json} contiene principalmente el nombre, la descripción, una sección de dependencias donde aparecen los módulos que he utilizado, y que he descrito en el capítulo \ref{chap:arte}, y una sección de scripts donde podemos crear nuestros propios comandos. 
+El archivo de Node llamado \textbf{package.json} contiene principalmente el nombre, la descripción, una sección de dependencias donde aparecen los módulos que he utilizado, y que he descrito en el capítulo~\ref{chap:arte}, y una sección de scripts donde podemos crear nuestros propios comandos. 
 
 \vspace{0.4cm}
 El archivo \textbf{tsconfig.json} es el archivo de configuración de TypeScript.
@@ -815,7 +815,7 @@ Angular se compone de componentes, servicios, módulos y directivas. La estuctura
 \end{itemize}
 
 
-\subsection{Uso de multiples idiomas}
+\subsection{Uso de múltiples idiomas}
 \label{subsec:cliente.idiomas}
 
 Como hemos dicho, dentro de la carpeta i18n tenemos un Json para cada idioma en el que se quiera mostrar la aplicación. Estos Json incluyen todo el contenido de las vistas que quiera ser traducido. Y todos ellos deben tener el mismo contenido. Un ejemplo de uso es el siguiente:
