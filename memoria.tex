@@ -32,7 +32,7 @@
 \usepackage{latexsym}  %% Logo LaTeX
 
 \title{Memoria del Proyecto}
-\author{Nombre del autor}
+\author{Nerea Cortés Lomana}
 
 \renewcommand{\baselinestretch}{1.5}  %% Interlineado
 
@@ -61,16 +61,16 @@
 \vspace{3cm}
 
 \Large
-TITULACIÓN EN MAYÚSCULAS
+GRADO EN INGENIERÍA EN TECNOLOGÍAS DE LA TELECOMUNICACIÓN
 
 \vspace{0.4cm}
 
 \large
-Curso Académico 20XX/20XX
+Curso Académico 2018/2019
 
 \vspace{0.8cm}
 
-Trabajo Fin de Grado/Máster
+Trabajo Fin de Grado
 
 \vspace{2.5cm}
 
@@ -80,7 +80,7 @@ TÍTULO DEL TRABAJO EN MAYÚSCULAS
 \vspace{4cm}
 
 \large
-Autor : Nombre del Alumno/a \\
+Autor : Nerea Cortés Lomana \\
 Tutor : Dr. Gregorio Robles
 \end{center}
 \end{titlepage}
@@ -99,15 +99,15 @@ Tutor : Dr. Gregorio Robles
 \vspace{-4cm}
 \begin{center}
 \LARGE
-\textbf{Trabajo Fin de Grado/Máster}
+\textbf{Trabajo Fin de Grado}
 
 \vspace{1cm}
 \large
-Título del Trabajo con Letras Capitales para Sustantivos y Adjetivos
+Juego de Estrategia:  Game of War
 
 \vspace{1cm}
 \large
-\textbf{Autor :} Nombre del Alumno/a \\
+\textbf{Autor :} Nerea Cortés Lomana\\
 \textbf{Tutor :} Dr. Gregorio Robles Martínez
 
 \end{center}
@@ -145,18 +145,17 @@ Fuenlabrada, a \qquad$\;\,$ de \qquad\qquad\qquad\qquad de 20XX
 \pagenumbering{Roman} % para comenzar la numeracion de paginas en numeros romanos
 \begin{flushright}
 \textit{Dedicado a \\
-mi familia / mi abuelo / mi abuela}
+mi familia}
 \end{flushright}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% Agradecimientos
 
-\chapter*{Agradecimientos}
+%\chapter*{Agradecimientos}
 %\addcontentsline{toc}{chapter}{Agradecimientos} % si queremos que aparezca en el índice
-\markboth{AGRADECIMIENTOS}{AGRADECIMIENTOS} % encabezado 
+%\markboth{AGRADECIMIENTOS}{AGRADECIMIENTOS} % encabezado
 
-Aquí vienen los agradecimientos\ldots Aunque está bien acordarse de la pareja, no hay que olvidarse de dar las gracias a tu madre, que aunque a veces no lo parezca disfrutará tanto de tus logros como tú\ldots 
-Además, la pareja quizás no sea para siempre, pero tu madre sí.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% Resumen
@@ -165,17 +164,16 @@ Además, la pareja quizás no sea para siempre, pero tu madre sí.
 %\addcontentsline{toc}{chapter}{Resumen} % si queremos que aparezca en el índice
 \markboth{RESUMEN}{RESUMEN} % encabezado
 
-Aquí viene un resumen del proyecto. Ha de constar de tres o cuatro párrafos, donde se presente de manera clara y concisa de qué va el proyecto. 
-Han de quedar respondidas las siguientes preguntas:
 
-\begin{itemize}
-  \item ¿De qué va este proyecto? ¿Cuál es su objetivo principal?
-  \item ¿Cómo se ha realizado? ¿Qué tecnologías están involucradas?
-  \item ¿En qué contexto se ha realizado el proyecto? ¿Es un proyecto
-dentro de un marco general?
-\end{itemize}
 
-Lo mejor es escribir el resumen al final.
+% ¿De qué va este proyecto? ¿Cuál es su objetivo principal?
+% Un juego. de que? por que un juego?
+% ¿Cómo se ha realizado? ¿Qué tecnologías están involucradas?
+%                 angular y node
+%                 por q esas? este tipo de juegos.. evolucionan escalables
+% mojoras sin grandes cambios
+% https://www.youtube.com/watch?v=AR1tLGQ7COs
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% Resumen en inglés
@@ -184,9 +182,7 @@ Lo mejor es escribir el resumen al final.
 %\addcontentsline{toc}{chapter}{Summary} % si queremos que aparezca en el índice
 \markboth{SUMMARY}{SUMMARY} % encabezado
 
-Here comes a translation of the ``Resumen'' into English. Please, double check it for correct grammar and spelling.
-As it is the translation of the ``Resumen'', which is supposed to be written at the end, this as well should be filled out
-just before submitting.
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -199,7 +195,7 @@ just before submitting.
 % y comentar/descomentar esa instrucción de LaTeX.
 
 %%%% Índice de contenidos
-\tableofcontents 
+\tableofcontents
 %%%% Índice de figuras
 \cleardoublepage
 %\addcontentsline{toc}{chapter}{Lista de figuras} % para que aparezca en el indice de contenidos
@@ -217,90 +213,36 @@ just before submitting.
 
 \cleardoublepage
 \chapter{Introducción}
-\label{sec:intro} % etiqueta para poder referenciar luego en el texto con ~\ref{sec:intro}
+\label{chap:intro} % etiqueta para poder referenciar luego en el texto con ~\ref{sec:intro}
 \pagenumbering{arabic} % para empezar la numeración de página con números
 
-En este capítulo se introduce el proyeto. Debería tener información general sobre el mismo, dando la información sobre el contexto en el que se ha desarrollado.
 
-No te olvides de echarle un ojo a la página con los cinco errores de escritura más frecuentes\footnote{\url{http://www.tallerdeescritores.com/errores-de-escritura-frecuentes}}.
+\section{Presentación}
+\label{sec:presentacion}
 
-Aconsejo a todo el mundo que mire y se inspire en memorias pasadas. Las mías están todas almacenadas en mi web del GSyC\footnote{\url{https://gsyc.urjc.es/~grex/pfcs/}}.
+Esta memoria recoge el trabajo realizado para mi proyecto de fin de grado en ingeniería en tecnologías de la telecomunicación. El proyecto consiste en la realización de un juego de estrategia online.
 
-\section{Sección}
-\label{sec:seccion}
+Los primeros prototipos de videojuegos se remontan a la década de 1950 y en década de los 70 aparecieron los primeros videojuegos dirigidos al gran público. Desde entonces la industria del videojuego a pasado a convertirse en una de las mayores industrias del entretenimiento.
+El 54\% de la población Europea juega a videojuegos una media de 7.5 horas a la semana, según los estudios realizados por la ISFE\footnote{\url{https://www.isfe.eu/games-in-society}} (Interactive Software Federation of Europe).
 
-Esto es una sección, que es una estructura menor que un capítulo. 
+El videojuego es la primera opción de ocio de los españoles, más concretamente en 2018, España contaba con 15.8 millones de jugadores, según la AEVI\footnote{\url{http://www.aevi.org.es/mas-15-millones-espanoles-juegan-videojuegos/}} (Asociación española de videojuegos). Pero España sigue siendo más un país consumidor que dedicados a la producción y desarrollo de videojuegos.
 
-Por cierto, a veces me comentáis que no os compila por las tildes.
-Eso es un problema de codificación.
-Cambiad de ``UTF-8'' a ``ISO-Latin-1'' (o vicecersa) y funcionará.
+Esto me ha llevado a comprobar el reto que supone la realización de un videojuego. El tipo de juego elegido es un juego de guerra de estrategia, en tiempo real, multijugador y online. Cada jugador se enfrentará a los demás jugadores. Cada uno de ellos dispondrá de una ciudad, la cual tendrá que desarrollar y proteger del resto de jugadores
 
-\subsection{Estilo}
-\label{subsec:estilo}
-
-Recomiendo leer los consejos prácticos sobre LaTeX de Diomidos 
-Spinellis\footnote{\url{https://github.com/dspinellis/latex-advice}}.
-
-Sobre el uso de las comas\footnote{\url{http://narrativabreve.com/2015/02/opiniones-de-un-corrector-de-estilo-11-recetas-para-escribir-correctamente-la-coma.html}}
-
-A continuación, viene una figura, la Figura~\ref{figura:foro_hilos}. 
-Observarás que el texto dentro del a referencia es el identificador de la figura (que se corresponden con el ``label'' dentro de la misma). 
-También habrás tomado nota de cómo se ponen las ``comillas dobles'' para que se muestren correctamente. 
-Volviendo a las referencias, nota que al compilar, la primera vez se crea un diccionario con las referencias, y en la segunda compilación se ``rellenan'' estas referencias. 
-Por eso hay que compilar dos veces.
-
- \begin{figure}
-    \centering
-    \includegraphics[bb=0 0 800 600, width=12cm, keepaspectratio]{img/foro1}
-    \caption{Página con enlaces a hilos}
-    \label{figura:foro_hilos}
- \end{figure}
-
-{\footnotesize
-\begin{verbatim}
-    From gaurav at gold-solutions.co.uk  Fri Jan 14 14:51:11 2005
-    From: gaurav at gold-solutions.co.uk (gaurav_gold)
-    Date: Fri Jan 14 19:25:51 2005
-    Subject: [Mailman-Users] mailman issues
-    Message-ID: <003c01c4fa40$1d99b4c0$94592252@gaurav7klgnyif>
-
-    Dear Sir/Madam,
-    How can people reply to the mailing list?  How do i turn off
-    this feature? How can i also enable a feature where if someone
-    replies the newsletter the email gets deleted?
-    Thanks
-
-    From msapiro at value.net  Fri Jan 14 19:48:51 2005
-    From: msapiro at value.net (Mark Sapiro)
-    Date: Fri Jan 14 19:49:04 2005
-    Subject: [Mailman-Users] mailman issues
-    In-Reply-To: <003c01c4fa40$1d99b4c0$94592252@gaurav7klgnyif>
-    Message-ID: <PC173020050114104851057801b04d55@msapiro>
-
-    gaurav_gold wrote:
-    >How can people reply to the mailing list?  How do i turn off
-    this feature? How can i also enable a feature where if someone
-    replies the newsletter the email gets deleted?
-
-    See the FAQ
-    >Mailman FAQ: http://www.python.org/cgi-bin/faqw-mm.py
-    article 3.11
-\end{verbatim}
-}
+El juego debe ser capaz de dar acceso a gran cantidad de usuarios y proporcionar soporte en múltiples idiomas. Para la realización se han escogido tecnologías que se han popularizado bastante estos últimos años, y que me gustaría poder llegar a conocer bien, como son Nodejs y Angular. Además Node proporciona altas concurrencias lo que es adecuado para el juego.
 
 \section{Estructura de la memoria}
 \label{sec:estructura}
 
-En esta sección se debería introducir la esctura de la memoria. Así:
+La memoria está estructurada de la siguiente manera:
 
 \begin{itemize}
-  \item En el primer capítulo se hace una intro al proyecto.
-  
-  \item En el capítulo~\ref{chap:objetivos} (ojo, otra referencia automática) se muestran los objetivos del proyecto.
-  
-  \item A continuación se presenta el estado del arte.
-  
-  \item \ldots
+ \item \textbf{Capítulo \ref{chap:intro}. Introducción:} en este primer capítulo se realiza una descripción general del proyecto, especificando la estructura del mismo.
+ \item \textbf{Capítulo \ref{chap:objetivos}. Objetivos:} se exponen los objetivos que se pretenden conseguir con la realización de este proyecto.
+ \item \textbf{Capítulo \ref{chap:arte}. Estado del arte:} contiene una descripción de las tecnologías utilizadas para desarrollar la aplicación.
+ \item \textbf{Capítulo \ref{chap:implementacion}. Diseño e implementación:} este capítulo se explica el funcionamiento de la aplicación y cómo ha sido diseñada y desarrollada.
+ \item \textbf{Capítulo \ref{chap:resultados}. Resultados:} se realiza un análisis de los resultados obtenidos.
+ \item \textbf{Capítulo \ref{chap:conclusiones}. Conclusiones:} conclusiones tras la realización del proyecto.
 \end{itemize}
 
 
@@ -317,25 +259,33 @@ En esta sección se debería introducir la esctura de la memoria. Así:
 \section{Objetivo general} % título de sección (se muestra)
 \label{sec:objetivo-general} % identificador de sección (no se muestra, es para poder referenciarla)
 
-Aquí vendría el objetivo general en una frase:
-Mi trabajo fin de grado consiste en crear de una herramienta de análisis de los comentarios jocosos en repositorios de software libre alojados en la plataforma GitHub.
-
-Recuerda que los objetivos siempre vienen en infinitivo.
+El objetivo de mi trabajo fin de grado consiste en desarrollar de un videojuego online de estrategia en tiempo real y multijugador al que se pueda acceder a través de un navegador.
 
 
 \section{Objetivos específicos}
 \label{sec:objetivos-especificos}
 
-Los objetivos específicos se pueden entender como las tareas en las que se ha desglosado el objetivo general.
-Y, sí, también vienen en infinitivo.
+
+
+% cualquier plataforma
+% Sencillez de uso
+% Soporte en multiples idiomas.
+% Acceso a gran cantidad de usuario.
+% Ejecución en tiempo real.
+% juego contra otros
+% sistema de batalla
+% Uso de tecnologias 
 
 
 \section{Planificación temporal}
 \label{sec:planificacion-temporal}
 
-A mí me gusta que aquí pongáis una descripción de lo que os ha llevado realizar el trabajo.
-Hay gente que añade un diagrama de GANTT.
-Lo importante es que quede claro cuánto tiempo llevas (tiempo natural, p.ej., 6 meses) y a qué nivel de esfuerzo (p.ej., principalmente los fines de semana).
+%4 mese muy intensos
+%Definición de la estructura de la base de datos
+%REalizacion del servidor mediante el uso de postman
+%Desarrollo de la aplicación web 
+%Mejora de aspecto
+%Elaboración de la memoria.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -345,37 +295,222 @@ Lo importante es que quede claro cuánto tiempo llevas (tiempo natural, p.ej., 6 
 
 \cleardoublepage
 \chapter{Estado del arte}
+\label{chap:arte}
 
-Descripción de las tecnologías que utilizas en tu trabajo. 
-Con dos o tres párrafos por cada tecnología, vale. 
-Se supone que aquí viene todo lo que no has hecho tú.
+Para el desarrollo del proyecto se han utilizado una serie de tecnologías ya existentes que se describen a continuación.
 
-Puedes citar libros, como el de Bonabeau et al. sobre procesos estigmérgicos~\cite{bonabeau:_swarm}. % Nota que el ~ añade un espacio en blanco, pero no deja que exista un salto de línea. Imprescindible ponerlo para las citas.
+\section{Angular}
+\label{sec:angular}
 
-También existe la posibilidad de poner notas al pie de página, por ejemplo, una para indicarte que visite la página de LibreSoft\footnote{\url{http://www.libresoft.es}}.
+Angular~\cite{angular} es un entorno de desarrollo de front-end que facilita la construcción de aplicaciones en HTML y Typescript.
+Se trata de un framework de código abierto, creado por Google. Hay diferentes versiones de Angular, la primera de ellas es conocida como Angularjs y es totalmente diferente a las versiones posteriores, que se las conoce simplemente como Angular y que son mejoras de Angular 2.
 
-\section{Sección 1} 
-\label{sec:seccion1}
+\vspace{0.4cm}
+Angular se utiliza para el desarrollo de aplicaciones web SPA, aplicaciones de una sola página (Single page aplication).
+Estas aplicaciones no recargan la página en ningún momento y la carga de datos es completamente asíncrona con el servidor. Este tipo de web son completamente dinámicas, el cambio entre las diferentes secciones de la web o entre las diferentes urls de la web es prácticamente instantáneo, dinámico y reactivo. Las aplicaciones web SPA se han popularizado bastante estos últimos años y crearlas no es una tarea sencilla sin ningún framework, esto es una de las razones que han hecho a Angular tan popular.
+Es el entorno de desarrollo front-end más popular del mundo\\
+También es posible utilizar angular para crear aplicaciones móviles, a través de otro complemento conocido como Ionic, y aplicaciones de escritorio.
 
-Hemos hablado de cómo incluir figuras.
-Pero no hemos dicho nada de tablas.
-A mí me gustan las tablas.
-Mucho.
-Aquí un ejemplo de tabla, la Tabla~\ref{tabla:ejemplo}.
+\vspace{0.4cm}
+La manera más estándar de programar con Angular es mediante el lenguaje typescript, que luego es compilado a javascript.
+La estructura de Angular se basa en 4 tipos principales de clases, que son simples clases con decoradores que marcan de que tipo son y proveen los metadatos necesarios para que Angular sepa cómo usarlas.
 
-\begin{table}
- \begin{center}
-  \begin{tabular}{ | l | c | r |} % tenemos tres colummnas, la primera alineada a la izquierda (l), la segunda al centro (c) y la tercera a la derecha (r). El | indica que entre las columnas habrá una línea separadora.
-    \hline
-    1 & 2 & 3 \\ \hline % el hline nos da una línea vertical
-    4 & 5 & 6 \\ \hline
-    7 & 8 & 9 \\
-    \hline
-  \end{tabular}
-  \label{tabla:ejemplo}
-  \caption{Ejemplo de tabla}
- \end{center}
-\end{table}
+\vspace{0.4cm}
+\textbf{Módulos:} En los módulos se especifican las dependencias de las aplicaciones, las clases que serán inyectables, los componentes que va a contener y cuál de ellos será el principal.\\
+Cada aplicación de Angular tiene un módulo raíz, llamado convencionalmente AppModule, que proporciona el mecanismo de arranque de la aplicación.\\
+Al igual que los módulos de Javascript se pueden importar y exportar funcionalidades y permitir que sean utilizadas por otros módulos. De este modo, si se trata de aplicaciones muy grandes pueden tener varios módulos, uno para cada funcionalidad. Esta organización ayuda a gestionar el desarrollo de las aplicaciones complejas y a la reutilización. Además, de este modo se minimiza la cantidad de código que se carga al inicio, cargando los módulos a pedido.
+ 
+\vspace{0.4cm}
+\textbf{Componentes:} Un componente es el controlador de una vista, es decir, controla una parte de lo que aparece en pantalla.\\
+Para convertir la clase en componente se usa el decorador  @Component, en el que se especifica cómo se va a mostrar este componente utilizando un template, una plantilla HTML que define una vista, y para definir su comportamiento se utilizan los atributos de la clase y sus métodos.\\
+Los componentes pueden tener sub-componentes y cada aplicación Angular tiene al menos un componente, el componente raíz, que conecta de manera jerárquica el resto de componentes.\\
+Para que un componente se pueda comunicar con otros sub-componentes existen dos mecanismos, para enviar datos se utilizan propiedades y para recibirlos se utilizan eventos. Para implementar esa comunicación se usan binding(uniones).
+
+\vspace{0.4cm}
+\textbf{Directivas:} son clases que define palabras clave a usar dentro de las plantillas. Cuando angular las procesa transforma el DOM de acuerdo a lo especificado por las directivas. Pueden ser estructurales si modifican el diseño o de atributo si modifican la apariencia o comportamiento de un componente.\\
+Las plantillas combinan HTML con el marcado de Angular, como son las directivas y los bidings, uniones o enlaces entre los datos de la aplicación y el DOM.
+
+\vspace{0.4cm}
+\textbf{Servicios:} son clases que pueden ser usadas por los componentes para pedir datos u operaciones, se utilizan para aislar la lógica de la aplicación. Un ejemplo de uso es para hacer peticiones a APIs.\\
+Se puede utilizar un mismo servicio dentro de múltiples componentes fácilmente gracias a la inyección de dependencias. La inyección de dependencias es un patrón de diseño en el cual los objetos se pasan por parámetro a una clase, en lugar de ser la clase la que instancia dichos objetos.
+
+
+\subsection{Angular CLI}
+\label{subsec:angularCli}
+Angular CLI~\cite{angular:cli} es una herramienta de línea de comandos utilizada para inicializar, desarrollar y mantener aplicaciones de Angular. Facilita mucho el proceso de inicio de cualquier aplicación con Angular, ya que mediante un sólo comando puedes obtener todo el esqueleto de una aplicación. Al crear un proyecto genera también un archivo de configuración, estos valores se pueden modificar editando el archivo o por línea de comandos. También permite agregar nuevos componentes, servicios, directivas, etc.\\
+Angular cli incluye además un servidor, herramientas de compilación, testing, despliegue del proyecto, etc.
+
+
+\subsection{Ngx-tranlate}
+\label{subsec:ngx-tranlate}
+Es una librería de Angular~\cite{ngx-translate} para la internacionalización de una aplicación. Permite definir traducciones para el contenido de la aplicación, en diferentes idiomas, y cargar dinámicamente estas traducciones, es decir que podemos cambiar de un idioma a otro sin necesidad de recargar la pantalla y de manera sencilla.
+
+\vspace{0.5cm}
+Ngx-translate pone a nuestra disposición un servicio de traducción, pipe y directivas que nos ofrecen diferentes formas de realizar las traducciones; y métodos para establecer los idiomas disponibles, seleccionar el idioma por defecto de la aplicación, cambiar de idioma, etc. \\
+Estas traducciones se guardan en archivos Json y ofrece la posibilidad de incluir variables en las traducciones.
+
+\vspace{0.5cm}
+Para utilizarlo es necesario importar los módulos y provedores: TranslateLoader, TranslateModule y TranslateHttpLoader. Y configurar el módulo de traducción, TranslateModule, para utilizar un cargador personalizado. TranslateHttpLoader se encargará de la carga de los distintos archivos de idiomas desde src/assets/i18n/ utilizando HttpClient. También es posible cambiar la ruta y la extensión de archivo predeterminadas mediante su configuración.
+
+
+\section{Typescript}
+\label{sec:typescript}
+
+TypeScript~\cite{typescript} un lenguaje de programación, de código abierto y desarrollado por Microsoft.
+Nació como una necesidad de mejorar algunos problemas de JavaScript, entre ellos el hecho de que es bastante complicado crear aplicaciones a gran escala con JavaScript. Está pensado para el desarrollo de aplicaciones robustas y escalables, y se puede utilizar tanto en el lado del cliente como en el del servidor junto a Nodejs.
+
+\vspace{0.4cm}
+TypeScript es un superset de JavaScript, es decir que se trata de un lenguaje basado en JavaScript. Los programas de JavaScript son programas válidos de TypeScript. Esto permite integrar JavaScript en proyectos ya existentes, sin tener que rehacer todo el proyecto en TypeScript, ya que todo el código TypeScript se compila en JavaScript nativo.\\
+Algunas de las características de TypeScript son:
+\begin{itemize}
+  \item Pone a nuestra disposición las herramientas de JavaScript ES6 (Ecmascript 6). De esta manera se mantiene a la vanguardia con las ultimas mejoras de JavaScript.
+  \item Cuenta con un tipado estático, es decir, al crear variables podemos añadir el tipo de dato, de esta forma es posible evitar errores en tiempo de ejecución.
+  \item Objetos basados en clases, lo cual facilita mucho la programación orientada a objetos y añade más funcionalidad.
+\end{itemize}
+
+
+\section{Mysql}
+\label{sec:mysql}
+
+Es un sistema de administración de base de datos relacional. MYSQL~\cite{Mysql} almacena los datos en tablas estructuradas, utiliza múltiples tablas conectadas por un campo en común, que hace posible combinar datos de las diferentes tablas. Lo que supone mayor velocidad y flexibilidad.\\
+Es un gestor multi-hilo lo que le permite manejar muchas tareas al mismo tiempo y ser utilizado por varias personas sin tener que esperar a que otros terminen sus consultas o procesos, lo que lo hace sumamente versátil.
+
+Mysql cuenta con una licencia dual, por una parte, es de código abierto (licencia pública general), y por otra, cuenta con una licencia comercial gestionada por Oracle Corporation.
+
+Es muy utilizado en entornos de desarrollo web. Se la considera la base de datos de código abierto más popular y una de las más populares en general junto a Oracle y Microsoft SQL Server.
+
+
+\section{Node.js}
+\label{sec:nodejs}
+
+Node~\cite{node} es un entorno de ejecución de JavaScript controlado por eventos asíncronos, diseñado para construir aplicaciones de red escalables.\\
+Fue creado por Ryan Dahl en 2009 y está influenciado por sistemas como Event Machine de Ruby ó Twisted de Python.
+
+Cuando se utiliza JavaScript en el lado del cliente, es el navegador quien, a través de un programa interno (un motor), interpreta el código JavaScript. De este mismo modo, Node proporciona un entorno de ejecución JavaScript del lado del servidor, haciendo uso del motor JavaScript V8 de Google. Un motor JavaScript se encarga de interpretar el código y ejecutarlo. El motor v8 es el motor que Google usa en su navegador Chrome y es posible descargarlo e incorporarlo a cualquier aplicación.
+
+Node está pensado para soportar concurrencias muy altas gracias a su naturaleza asíncrona. El modelo de concurrencia más común consiste en la utilización de hilos del sistema operativo. Se genera un nuevo hilo para cada conexión, de modo que, a mayor cantidad de personas, mayor cantidad de recursos consumidos del servidor y mayor número de servidores son necesarios. Node emplea un único hilo y un bucle de eventos asíncrono. Las nuevas peticiones son tratadas como eventos en este bucle, sin que se produzca ningún tipo de bloqueo en el flujo de trabajo.
+
+
+\subsection{NPM}
+\label{subsec:npm}
+
+Node package manager~\cite{NPM} es el administrador de paquetes de Node.js.  Con él podemos instalar cualquier paquete Node.js que lleguemos a necesitar para nuestros proyectos, con una sola línea de código. Ayuda a administrar nuestros módulos, distribuir paquetes y agregar dependencias de forma sencilla. Esta escrito enteramente en JavaScript y fue desarrollado por Isaac Z. Schlueter.
+
+NPM utiliza el archivo package.json para almacenar los datos relevantes a nuestra aplicación. Este archivo corresponde a una estructura JSON que incluye metadatos importantes para la descripción del módulo, la cual es utilizada en procesos tales como la instalación y publicación de los módulos (nombre, versión, autor, dependencias, etc.).
+
+
+\subsection{Express}
+\label{subsec:express}
+Express~\cite{express} es el framework más popular de Nodejs y muchos otros frameworks populares de Nodejs están basados en él. Es rápido, minimalista y flexible, y proporciona todo lo necesario para crear tu servidor web sobre Node. Algunas características de Express son:
+\begin{itemize}
+\item Se comporta como un middleware para ayudar a administrar nuestros servidores y rutas.
+\item Amplia las funcionalidades del módulo HTTP que vienen por defecto con Node.
+\item Permite a los usuarios configurar rutas para enviar y recibir solicitudes entre el front-end y la base de datos.
+\item Viene con un sistema de visualización que admite más de 14 motores de plantillas.
+\item Permite establecer ajustes de aplicaciones web como que puerto usar, la localización de las plantillas que se utilizan, etc.
+\item Proporciona un generador de aplicaciones que crea el esqueleto de una aplicación.
+\end{itemize}
+
+
+\subsection{Promise-Mysql}
+\label{subsec:promise-mysql}
+El módulo Promise-Mysql sirve para conectar Nodejs con Mysql, dando soporte para la utilización de promesas de Javascript.\\
+Se trata de un contenedor del controlador mysqljs/mysql de Node, que envuelve las llamadas con promesas Bluebird. Es decir que mientras el controlador mysqljs/mysql utiliza callbacks, promise-msqy soporta promesas.
+
+
+\subsection{Jsonwebtoken}
+\label{subsec:jsonwebtoken}
+Jsonwebtoken  es una librería que permite generar y verificar Json web tokens con Node.js.
+
+Json web token(jwt) \cite{jsonwebtoken} : es un estándar abierto para crear tokens. Un token se utiliza para validar el acceso de un usuario a un servidor, ser trata de una cadena alfanumérica que se obtiene al encriptar con una clave unos determinados datos que identifiquen al usuario.
+ 
+Los jwt están compuestos por 3 partes separadas por puntos: header.payload.signature
+
+{\footnotesize
+\begin{verbatim}
+    eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dnZWRJbkFzIjoiYWRtaW4iL
+    CJpYXQiOjE0MjI3Nzk2Mzh9.gzSraSYS8EXBxLNoWnFSRgCzcmJmMjLiuyu5CSpyHI
+\end{verbatim}
+}
+\textbf{Header:} La cabecera, contiene el algoritmo de encriptación (alg, comúnmente es el algoritmo HMAC SHA256) y el tipo de token (typ).
+{\footnotesize
+\begin{verbatim}
+    {
+        "alg": "HS256",
+        "typ": "JWT"
+    }
+\end{verbatim}
+}    
+\textbf{Payload:} Contiene atributos que definen nuestro token. Algunos de los atributos estándar de un token son:
+iat, indica cuando fue creado; jti, se trata de un identificador único para cada token; exp, indica el tiempo de expiración del token y se utiliza una fecha para validar si el token ha expirado y obligar al usuario o volver a autenticarse.
+
+\textbf{Signature:} La firma se genera utilizando las dos primeras partes, la cabecera y el contenido, en base64 y una clave secreta, key, que se utiliza para la encriptación.
+       
+{\footnotesize
+\begin{verbatim}
+     signature = HMAC-SHA256(key, base64Encode(header) + '.' 
+          + base64Encode(payload))
+\end{verbatim}
+}
+
+
+\section{HTML5}
+\label{sec:html}
+HTML \cite{HTML:w3} \cite{HTML:whatwg} (HyperText Markup Language) es un lenguaje de marcado que se utiliza para describir la estructura de las páginas web. HTML5 es la quinta versión de este lenguaje. A lo largo de todas las versiones se han incorporado y eliminado diferentes características, con el fin de hacerlo más eficiente y facilitar el desarrollo web compatibles con distintos navegadores y plataformas, y manteniéndose también compatible con las versiones anteriores.\Newline
+A pesar de ser un estándar a cargo del Consorcio WWW, fue la asociación WHATWG, formada por Apple, Opera y Mocilla; la que publico el primer borrador de HTML5 cuando W3C decidió dejar de evolucionar HTML. Más tarde W3C y WHATWG trabajaron juntos durante varios años en el desarrollo de HTML5, hasta que se separaron debido a sus diferentes objetivos, W3C quería publicar una versión terminada mientras que WHATWG quería seguir trabajando, manteniendo HTML5 en constante evolución.\\
+Algunas de las principales características de HTML5 son: 
+\begin{itemize}
+\item Incorpora nuevas etiquetas que especifican la semántica del contenido, ayudando a interpretar mejor la página. Donde antes teníamos \textless{}div\textgreater{} para definir cualquier sección, ahora podemos utilizar \textless{}header\textgreater{}, \textless{}nav\textgreater{}, \textless{}section\textgreater{}, \textless{}footer\textgreater{}, entre otros.
+
+\item Ofrece también mejoras en los formularios como validaciones, nuevos tipos de campos (email, date, range, etc) y nuevos atributos, por ejemplo, multiple, placeholder, form.
+
+\item Numerosas API, algunos ejemplos son:
+  \begin{itemize}
+          \item Canvas: que permite hacer dibujos, juegos, animaciones, etc.
+          \item Geolocalización: permite mostrar e interactuar con un mapa de Google Maps.
+          \item Web Storage: permite almacenar datos del lado del cliente, cuando la sesión está activa.
+          \item Audio y video: permite incrustar elementos de audio y video y reproducirlo desde el propio navegador.
+ \end{itemize}
+\end{itemize}
+
+
+\section{CSS3}
+\label{sec:css}
+CSS \cite{CSS3} son las siglas de Cascading Style Sheets, es un lenguaje de diseño web utilizado para definir el aspecto visual de una página. Indica cómo tienen que aparecer los elementos en el navegador en cuanto a colores, tamaños de las fuentes, tamaños de elemento, tipo de letra, fondos de página, etc.
+Con CSS se consigue separa el contenido y el formato, dentro del mismo documento o separándolo en una hoja de estilo. Esto permite reutilizar una misma hoja de estilo en diferentes documentos y modificar por completo la estética de la página sin tener que modificar el contenido.
+
+CSS3 es la última versión de este lenguaje, y proporciona nuevas características como bordes redondeados, sombras, gradientes, texto multi-columna, cajas flexibles, transiciones o animaciones, etc.
+
+
+\section{Bootstrap}
+\label{sec:bootstrap}
+Bootstrap \cite{bootstrap} es un popular framework de desarrollo front-end. Facilita el diseño de páginas web y ofrece herramientas para crear de manera sencilla sitios y aplicaciones web con un diseño responsive, es decir que, la interfaz se adapta de manera automática a cualquier dispositivo, tamaño y resolución de pantalla. Para ello utiliza un sistema de rejilla, compuesto por 12 columnas.\\
+Pone también a nuestra disposición elementos con estilos predefinidos fáciles de configurar como formularios, botones, cuadros, menús de navegación.
+
+Bootstrap es modular y consiste en una serie de hojas de estilo LESS (un lenguaje de pre-proceso de CSS) combinado con JavaScript.\\
+Originariamente se le conocía como Twitter Blueprint. Fue creado en 2010, para uso interno de la compañía, por Marck Otto y Jacob Thornton, trabajadores de Twitter, con el fin de paliar las inconsistencias producidas por el uso de varias librerías y el alto mantenimiento que ello suponía. Fue liberado con licencia MIT en el año 2011.
+
+
+\section{Bcryptjs}
+\label{sec:bcryptjs}
+Bcryptjs es una librería de encriptación escrita en JavaScript por Niels Provos y David Maxieres.
+Bcript genera un hash combinando la información que se desea encriptar con un valor llamado Salt, que son bytes aleatoriamente generados. De este modo al encriptar dos veces el mismo valor nunca generará el mismo hash.
+Esto evita los ataques Rainbow table y los ataques por fuerza bruta cuando se utiliza por ejemplo para guardar contraseñas en bases de datos.\\
+Bcrypy permite elegir el valor de saltRound, utilizado para calcular el campo Salt. Cuanto mayor sea este número más segura será la encriptación, pero mayor será el coste de procesamiento de los datos y más tiempo tarda en encriptar. Es decir, que tenemos la seguridad frente a ataques contra la espera del usuario. Por defecto, el valor de saltRound 10.
+
+Ofrece también herramientas para comparar un valor con otro encriptado. Para realizar la comparación, en vez de desencriptar el campo encriptado, como hacen otros sistemas, Bcrypy encripta el valor utilizando el valor Salt que va incorporado en el hash.
+
+
+\section{Momentjs}
+\label{sec:momentjs}
+Momentjs \cite{momentjs} es una librería de JavaScript para gestionar fechas, más completa, sencilla y fácil de utilizar que el objeto Date de JavaScript.  Moment js es un proyecto de código abierto, diseñado para ser utilizado tanto en un navegador como en Node.js. Permite analizar, validar, manipular y mostrar fechas en cualquier formato, etc. Además, tiene un robusto soporte internacional que permite mostrarlas en cualquier idioma.
+
+
+\section{Cors}
+\label{sec:cors}
+Cors (Cross-origin resource sharing) es un mecanismo para permitir acceder a recursos de un servidor desde un origen distinto al que pertenece, lo cual no esta permitido según la política de seguridad del mismo origen.
+Cors permite definir si es seguro permitir una petición de origen cruzado utilizando para ello cabeceras adicionales, antes de enviar la solicitud, se envía otra solicitud preliminar OPTION con la información del origen, y el servidor responde con los permisos de ese origen.\\
+Una forma de utilizar CORS en un servidor de Express es mediante el módulo cors de npm.
 
 
 
@@ -386,27 +521,633 @@ Aquí un ejemplo de tabla, la Tabla~\ref{tabla:ejemplo}.
 
 \cleardoublepage
 \chapter{Diseño e implementación}
+\label{chap:implementacion}
 
-Aquí viene todo lo que has hecho tú (tecnológicamente). 
-Puedes entrar hasta el detalle. 
-Es la parte más importante de la memoria, porque describe lo que has hecho tú.
-Eso sí, normalmente aconsejo no poner código, sino diagramas.
 
-\section{Arquitectura general} 
+\section{Arquitectura general}
 \label{sec:arquitectura}
 
-Si tu proyecto es un software, siempre es bueno poner la arquitectura (que es cómo se estructura tu programa a ``vista de pájaro'').
 
-Por ejemplo, puedes verlo en la figura~\ref{fig:arquitectura}.
+El proyecto consta de un cliente y un servidor independientes que interactúan entre ellos. El cliente está desarrollado utilizando Angular 7. Está escrito en TypeScript y se utiliza además HTML, CSS3 y Bootstrap para la visualización de las vistas. Por otro lado, para el servidor se ha utilizado Nodejs pero está igualmente programado en TypeScript. La aplicación requiere además de una base de datos, para la que se ha utilizado Mysql.
+
+Para que el cliente y el servidor puedan comunicarse, es decir, para que el cliente pueda acceder a los recursos ofrecidos por el servidor es necesario la utilización de CORS, ya que se encuentran en dominios diferentes y, como hemos explicado antes, esto no está permitido por motivos de seguridad.\\
+En la siguiente figura podemos ver la arquitectura de la aplicación~\ref{fig:arquitectura}.
 
 \begin{figure}
   \centering
-  \includegraphics[width=9cm, keepaspectratio]{img/arquitectura}
-  \caption{Estructura del parser básico}
+  \includegraphics[width=13cm, keepaspectratio]{img/arquitectura}
+  \caption{Arquitectura de la aplicación}
   \label{fig:arquitectura}
 \end{figure}
 
-Si utilizas una base de datos, no te olvides de incluir también un diagrama de entidad-relación.
+Cuando un usuario interactúe con la aplicación cliente a través de un navegador, esta hará peticiones HTTTP solicitando determinados recursos al servidor. El servidor accederá a la base de datos y respondera con un Json, que el cliente tratará y mostrará. Por ejemplo, cuando un usuario acceda a la URL /buildings, el cliente tendrá que mostrar los edificios de ese usuario, de modo que hará una petición GET a la ruta /api/buildings y el servidor enviará un Json con el modelo de datos de los edificios.
+
+
+\section{Diseño e implementación del servidor}
+\label{sec:servidor}
+
+Se ha creado un API REST para ofrecer los datos del juego. El servidor ofrece una serie de recursos, que veremos más adelante, y se encarga de los accesos a la base de datos, en función de las peticiones que reciba del cliente.
+
+El servidor, realizado con Nodejs, gestiona eventos de manera asíncrona, como hemos explicado. 
+Existen diferentes modelos de programación asíncrona. El modelo más común es la utilización de callbacks, es decir, cada operación asíncrona recibe una función que incluye lo que debe hacer a continuación. Pero este método dificulta la comprensión del código.
+
+El método elegido para realizar esta programación asíncrona ha sido el uso de promesas junto con los operadores async y await. De este modo el esquema de desarrollo se parece algo más al estilo secuencial pero manteniendo su carácter no bloqueante.\\
+Async/await nos permite ejecutar las promesas y esperar el resultado de forma síncrona, sin la necesidad de los bloques then y catch.
+
+De este modo cada acceso a la base de datos y la comunicación con el cliente se hace mediante promesas.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=11cm, keepaspectratio]{img/api}
+  \caption{Servidor}
+  \label{fig:api}
+\end{figure}
+
+
+\subsection{Modelos de la base de datos}
+\label{subsec:servidor.basededatos}
+
+\begin{figure}[H]
+  \raggedleft
+  \includegraphics[width=17cm, keepaspectratio]{img/baseDatos}
+  \caption{Base de datos}
+  \label{fig:baseDatos}
+\end{figure}
+
+La aplicación requiere de una base de datos. Parte de las tablas están rellenas inicialmente con los datos del juego. 
+
+La aplicación es multilenguaje, Español e Inglés, de modo que, la información almacenada que deba ser traducida estará almacenada en los dos idiomas. El resto de las tablas, pertenecientes a los datos de los usuarios se irán rellenando al crearse nuevos usuarios.
+
+Todo esto está definido dentro del archivo database.sql.
+
+\vspace{0.4cm}
+El esquema global de la base de datos se muestra en la figura~\ref{fig:baseDatos}.
+
+En las siguientes figuras se mostrarán las tablas separadas para poder verlas más detalladamente.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=5cm, keepaspectratio]{img/tablaIdiomas}
+  \caption{Tabla de Idiomas}
+  \label{fig:tablaIdiomas}
+\end{figure}
+
+La tabla \textit{languages} almacena los diferentes idiomas en los que es posible mostrar la aplicación. Como veremos más adelante sería sencillo añadir nuevos idiomas. Al igual que nuevos tipos de edificios e investigaciones con las utilidades que aportan, o tropas, ya que solo habría que modificar las tablas para añadir el contenido, no habría que tocar el código.
+
+
+\begin{figure}[H]
+  \raggedleft
+  \includegraphics[width=16cm, keepaspectratio]{img/tablasEdificios}
+  \caption{Tablas de edificios}
+  \label{fig:tablasEdificios}
+\end{figure}
+
+En la figura~\ref{fig:tablasEdificios} se muestran las tablas correspondientes a la información de los edificios.
+Cada edificio existente está guardado en la tabla \textit{buildings} y es identificado con el campo \textit{id\_building}, que es clave foránea de las otras dos tablas. 
+
+La información que debe ser traducida de un edificio está almacenada en la tabla \textit{buildings\_land}. Cada edificio, con un mismo id\_building, es almacenado en los idiomas existentes en la tabla \textit{languages}, de la cual es clave foránea el campo id\_languages. 
+
+Los edificios tiene diferentes niveles y cada uno de estos niveles está especificado en la tabla \textit{buildings\_levels}: se detallan los recursos y el tiempo necesarios para mejorar el edificio, las mejoras que se producen al subir de nivel el edificio (field\_toIncrease1 y field\_toIncrease2), etc.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=17cm, keepaspectratio]{img/tablasTropas}
+  \caption{Tablas de tropas}
+  \label{fig:tablasTropas}
+\end{figure}
+
+En la tabla \textit{troops\_type} de la figura~\ref{fig:tablasTropas} están almacenados los tipos de tropas en los que pueden clasificarse todas las tropas existentes, almacenadas en la tabla \textit{troops}. De este modo, id\_type es la clave primaria de la tabla \textit{troops\_type} y clave foránea de la tabla \textit{troops} ya que es utilizado para hacer referencia a la tabla \textit{troops\_type}. \\
+En la tabla \textit{troops\_type\_land} tenemos, nuevamente, el nombre y la descripción según el idioma.
+
+\vspace{0.3cm}
+En la tabla \textit{troops} tenemos las tropas identificadas con el campo id\_troops y se indica también: el nivel (dentro de cada tipo de tropa estas pueden ser más o menos poderosas); los recursos y el tiempo necesarios para crearlas; el ataque, defensa, vida y capacidad de carga de recursos de las tropas; qué edificio permitirá crear cada tipo de tropas (unlocked\_field) y a qué nivel (unlocked\_lv). La tabla \textit{troops\_land} es su correspondiente tabla de idiomas, y como puede verse hace referencia a ella mediante el campo id\_troop y a la tabla de idiomas mediante el campo id\_language.
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=16cm, keepaspectratio]{img/tablasInvestigaciones}
+  \caption{Tablas de investigaciones}
+  \label{fig:tablasInvestigaciones}
+\end{figure}
+
+
+En la figura~\ref{fig:tablasInvestigaciones} se muestran las tablas correspondientes a la información de las investigaciones.\\
+Cada investigación que se puede realizar está guardada en la tabla \textit{research} y se identifica mediante el campo id\_res (clave primaria). Se indica también el nivel máximo que puede alcanzar una investigación y qué es lo se consigue al mejorar su nivel. 
+
+La información que debe ser traducida de la tabla \textit{research} está almacenada en la tabla \textit{research\_land} y nuevamente vemos como hace referencia a ella y a la tabla \textit{languages}.
+
+Cada niveles está especificado en la tabla \textit{research\_levels}: los recursos y el tiempo necesarios para mejorar el edificio, cuándo estará desbloqueada la investigación para poder mejorarla y el poder que proporcionará. La clave de la tabla está formada por los campos id\_res y level.
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=15cm, keepaspectratio]{img/tablasUsuarios}
+  \caption{Tablas con informacion de usuarios }
+  \label{fig:tablasUsuarios}
+\end{figure}
+
+Cuando se registra un nuevo jugador se crea un nuevo registro en cada una de las tablas de la figura~\ref{fig:tablasUsuarios}, excepto en la tabla \textit{reports}.
+
+La tabla \textit{users} contiene a todos los jugadores. El campo id\_user es la clave única de la tabla. El nombre de usuario es único, de modo que, solo puede haber un jugador con un mismo nombre. El correo puede repetirse, pero podría utilizarse para limitar el número de cuentas de los jugadores. La contraseña se encripta antes de almacenarla en la base de datos para mayor seguridad.
+
+Las tablas \textit{users\_buildings}, \textit{users\_troops} y \textit{users\_research} almacenan la información de cada edificio, tropa o investigación del usuario: el nivel en actual, si hay algún proceso (construcción, investigación o creación de tropas) en marcha, el tiempo que queda para finalizar ese proceso, etc.
+
+La información general de cada partida se guarda en la tabla \textit{profile}: los recursos actuales del jugador, la producción de recursos, el poder, los bonus obtenidos de velocidad de construcción, investigación y creación de tropas, los bonus de ataque, defensa y vida, etc.
+
+La tabla \textit{reports} se utiliza para almacenar la información de los ataques realizados y recibidos de cada jugador. Por cada ataque se crean dos registro, uno para cada jugador, de esta manera se le podría dar mayor control sobre su informe a cada jugador. Los campos almacenados son, por ejemplo, la hora a la que se produjo el ataque, el ganador, los recursos perdidos o ganados, la información relativa a las tropas que participaron en la batalla, etc.
+
+
+
+
+\subsection{Estructura del servidor}
+\label{subsec:servidor.estructura}
+El servidor está estructurado, de manera sencilla, como se muestra en la imagen \ref{fig:esquemaServidor}.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=8cm, keepaspectratio]{img/esquemaServidor}
+  \caption{Esquema de ficheros del servidor }
+  \label{fig:esquemaServidor}
+\end{figure}
+
+El archivo de Node llamado \textbf{package.json} contiene principalmente el nombre, la descripción, una sección de dependencias donde aparecen los módulos que he utilizado, y que he descrito en el capítulo \ref{chap:arte}, y una sección de scripts donde podemos crear nuestros propios comandos. 
+
+\vspace{0.4cm}
+El archivo \textbf{tsconfig.json} es el archivo de configuración de TypeScript.
+En el se especifica, por ejemplo, a que versión de JavaScript tiene que traducirse TypeScript. En mi caso ECMAScript 6,  ``target'': ``es6''.
+También se puede especificar en qué directorio tiene que colocar ese código traducido a JavaScript. Yo he creado una carpeta llamada build, dentro de mi servidor, y es ahí donde quiero que coloque este código: ``outDir'': ``./build''.
+
+\vspace{0.4cm}
+En el archivo \textbf{database.ts} se establece la conexión de la base de datos, de esta manera no tenemos que establecerla todo el tiempo, cuando se quiere utilizar una consulta en otra parte del código simplemente se llama al módulo y este ya tiene la conexión.  
+Para establecer la conexión se la dan los parámetros de la base de datos: en que host está instalado, el usuario, la contraseña, en que puerto está instalado, etc., estos parámetros están definidos en el archivo \textbf{keys.ts}.
+
+\vspace{0.4cm}
+El archivo \textbf{index.ts} es el archivo principal de la aplicación. En el configuramos el servidor de Express: se le asigna un puerto, en el caso de que haya un puerto definido en el sistema será el que utilice; se habilita el uso de Json en las peticiones HTTP; se configura CORS, esta configuración se ha hecho de tal manera que solo acepte peticiones del origen de mi cliente; se establecen las rutas y se inicia el servidor.
+
+\vspace{0.4cm}
+Dentro de la carpeta \textbf{routes} tenemos todas las rutas organizadas, de manera que todas las rutas relacionadas están dentro de un mismo enrutador. Y del mismo modo, dentro de la carpeta \textbf{controllers} tenemos una clase para cada clase de routes, donde se especifica que tiene que hacer ese conjunto de rutas relacionadas.
+Es decir, por ejemplo, las rutas relativas a la autenticación de usuarios (/api/user/...) están dentro de userRoutes.ts y en userControllers.ts está el proceso que realiza de cada una de esas rutas.
+
+\vspace{0.4cm}
+Dentro de la carpeta \textbf{lib} tenemos dos clases: \textbf{jwt.ts} con métodos para la creación y validación de tokens; y \textbf{bcryps.ts} con métodos para la encriptación y validación de las contraseñas.
+
+\vspace{0.4cm}
+
+\textbf{Encriptación de la contraseña}
+
+La validación y encriptación de la contraseña se realiza mediante el uso del módulo Bcryptjs.
+Se utiliza la función asíncrona \textit{hash} para encriptar la contraseña, con un genSalt, explicado en el capítulo anterior, de 10.
+Para validar una contraseña introducida por un usuario se utiliza la función asíncrona \textit{compare}, que compara la contraseña introducida con el hash almacenado en la base de datos.
+
+\vspace{0.4cm}
+
+\textbf{Funcionamiento autenticación de usuarios}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=11cm, keepaspectratio]{img/autenticacion}
+  \caption{Funcionamiento autenticación de usuarios }
+  \label{fig:autenticacion}
+\end{figure}
+
+\begin{itemize}
+\item El cliente envía los datos del usuario al servidor, recabados a partir de la página de login/registro.
+\item El servidor recibe los datos del usuario.
+        En el caso de un usuario nuevo lo da de alta y genera un token. En el caso de un usuario ya registrado comprueba que el nombre de usuario y la contraseña se corresponden con los almacenados y genera un token. En ambos casos el token generado se envía de vuelta al cliente.
+        En caso de que el registro o el login no fuera correcto, el servidor envía un código de error 401 al cliente.
+
+\item Si la autenticación ha sido correcta, el usuario recibe el token y lo almacena en el almacenamiento local del navegador (LocalStorage) para poder disponer de él en las futuras peticiones que haga al servidor. De este modo si se refresca la página o se accede a ella pasado poco tiempo se seguirá disponiendo del token generado y se evita que el usuario tenga que repetir el proceso de login cada poco tiempo.
+
+\item Cada vez que el cliente tenga que acceder de nuevo al servidor se recoge el token del LocalStorage y se añade a la cabecera de la petición HTTP.
+\item El servidor antes de acceder al recurso solicitado, extraerá el token de la cabecera de la petición y lo validará.
+\item Cuando el token es invalido y el cliente recibe un código de error, este lo elimina del LocalStorage e indica al usuario que no está logueado.
+\end{itemize}
+
+
+
+\textbf{Generación y validación del token}
+
+\vspace{0.3cm}
+
+Para generar el token utilizado y validarlo he utilizado el módulo Jsonwebtokens.
+Como se ha comentado en el capítulo anterior, para generar un jwt se utiliza una clave para la encriptación, la cual está definida en el servidor, y un payload con los atributos del token. El payload que he utilizado es:
+{\footnotesize
+\begin{verbatim}
+   var payload = {
+        username: user.username,
+        id: user.id_user,
+        id_language: user.id_language
+    }
+\end{verbatim}
+}
+
+El token creado expira en 24 horas.\\
+He incluido en el token el id de usuario para utilizarlo en las peticiones. También estoy utilizando el idioma para recoger solo los datos del idioma seleccionado por el usuario.
+
+Para validar el token se extrae de la cabecera textit{Authorization} de la petición HTTP y se valida utilizando la función \textit{verify} de jwt. Si el token no iba en la cabecera, si la sesión ya ha expirado o es un token invalido, el servidor devuelve un error 401 al cliente. Si es válido continua con la petición del cliente.
+
+
+\subsection{API}
+\label{subsec:servidor.api}
+Operaciones y recursos disponibles de la API:
+
+\begin{itemize}
+  \item  \textbf{ post api/user/login :} comprueba que el nombre de usuario y la contraseña recibidos se corresponden con los almacenados accediendo a la tabla \textit{users}. Si es así genera un token y lo envía al cliente. 
+  En caso de que el usuario no exista o la contraseña sea incorrecta devuelve un error HTTP 401.
+  \item \textbf{ post api/user/register :} encripta la contraseña e inserta un registro en la tabla \textit{users} junto con el resto de datos introducidos por el usuario. Crea también un registro en las tablas \textit{user\_buildings}, \textit{user\_troops}, \textit{user\_research} y \textit{profile}, con los datos iniciales de la nueva partida.
+  \item \textbf{ get api/user/ :} realiza una select de la tabla \textit{users} y devuelve el nombre y el idioma del usuario.
+  \item \textbf{ put api/user/ :} modifica el idioma de un usuario: actualiza el campo id\_language de la \textit{users} del usuario que realiza la petición.
+  \item \textbf{ get api/language/ :} devuelve los idiomas disponibles, es decir, realiza una select de la tabla \textit{languages} y devuelve el contenido.
+  \item \textbf{ get api/profile/ :} devuelve el perfil del jugador.
+  \item \textbf{ get api/profile/enemyList :} recupera una lista de 30 usuarios de la tabla \textit{profile} (partidas de usuarios). Para hacer la select de esa lista primero se generan identificadores de usuarios que necesitará para la busqueda, de la siguiente manera: Se recuperan de la tabla reports los usuarios que han atacado al jugador que realiza la petición, si el número total de estos usuarios es inferior a 30, se complementa la lista con identificadores de usuario generados aleatoriamente entre el total de usuarios. 
+  \item \textbf{ put api/profile/:idUser :} actualiza la partida del jugador con el identificador idUser, la tabla \textit{profile}.
+  \item \textbf{ get api/research/ :} recupera los datos relacionados de las tablas \textit{user\_research}, \textit{research}, \textit{research\_lang} y \textit{research\_levels}, es decir la información del jugador en cuanto a investigaciones, y la devuelve.
+  \item \textbf{ get api/research/timeToEnd :} devuelve el tiempo restante para que finalice la investigación que haya en curso.
+  \item \textbf{ put api/research/:idRes :} actualiza la tabla \textit{user\_research} para la investigación con el identificador indicado, idRes.
+  \item \textbf{ get api/buildings/ :} recupera los datos relacionados de las tablas \textit{user\_buildings}, \textit{buildings}, \textit{buildings\_lang} y \textit{buildings\_levels}, es decir, la información de un jugador relativa a los edificios.
+  \item \textbf{ get api/buildings/timeToEnd :} recupera el tiempo restante para que finalice el edificio que haya en construcción.
+  \item \textbf{ get api/buildings/:idBuil :} devuelve la información de un edificio concreto, idBuild, relativa al jugador.
+  \item \textbf{ put api/buildings/:idBuil :} actualiza la tabla \textit{user\_buildings} para el edificio con el identificador indicado, idBuil.
+  \item \textbf{ get api/troops/ :} devuelve la información de las tropas (\textit{troops} y \textit{troops\_lang}). 
+  \item \textbf{ get api/troops/user/timeToEnd :} devuelve el tiempo restante para que finalicen las tropas que haya creandose.
+  \item \textbf{ get api/troops/user/all :} devuelve la información de las tropas relacionadas con el jugador que realiza la petición. Es decir, los datos relacionados de las tablas \textit{user\_troops}, \textit{troops}, \textit{troops\_lang}, \textit{troops\_type} y \textit{troops\_type\_lang}.
+  \item \textbf{ get api/troops/user/:idUser :} devuelve la información de las tropas relacionadas con el jugador con el identificador idUser, de las tablas \textit{user\_troops}, \textit{troops}y \textit{troops\_lang}.
+  \item \textbf{ put api/troops/:idTroop :} actualiza la tabla \textit{user\_troops} para las tropas con el identificador idTroop y el usuario que realiza la petición.
+  \item \textbf{ put api/troops/number/:idUser :} actualiza el número de tropas de un jugador: el campo number de la tabla \textit{user\_troops} para todas las tropas del usuario idUser.
+  \item \textbf{ get api/reports/ :} devuelve los informes de ataque del jugador que realiza la petición.
+  \item \textbf{ put api/reports/:idReport :} actualiza el contenido de un informe de ataque, identificado con idReport. Tabla \textit{reports}.
+  \item \textbf{ post api/reports/ :} Crea un registro, un informe de ataque, en la tabla \textit{reports}.
+\end{itemize}
+
+Todas las respuestas generadas tienen formato JSON.
+
+
+
+\section{Diseño e implementación del cliente}
+\label{sec:cliente}
+
+El cliente es el encargado de interactuar con los usuarios a través de un navegador web. Tal y como he explicado anteriormente, la parte del cliente está desarrollada utilizando Angular 7. Angular proporciona un servidor en el puerto 4200, que es el encargado de atender a las peticiones del usuario. \\
+Al tratarse de una aplicación SPA no se recarga la página en ningún momento. La carga de datos es completamente asíncrona con el servidor y ademas este tipo de web son completamente dinámicas, es decir, que el cambio entre las diferentes urls de la web es completamente instantáneo, dinámico y reactivo. 
+
+\vspace{0.5cm}
+Angular se compone de componentes, servicios, módulos y directivas. La estuctura general del cliente es la siguiente:
+
+\begin{itemize}
+ \item \textbf{index.html} es la página html inicial del proyecto, aquí tenemos la cabecera de HTML con el cuerpo que llama directamente al componente raíz app.component.
+ \item \textbf{main.ts} es el archivo TypeScript inicial, en el se establecen los módulos necesarios, en nuestro caso app.module.ts.
+
+ \item\textbf{styles.css} en el se establecen los estilos globales de la aplicación.
+
+ \item \textbf{app.module.ts} es el módulo principal de mi proyecto, en él se declaran los componentes, los proveedores y los módulos que se utilizan.
+
+ \item\textbf{app.component.ts} es el componente raíz y su plantilla \textbf{app.component.html} divide la página de manera que la parte de arriba muestra siempre una vista controlada por el componente navigation y el resto de la página varía. Esta parte que varía es controlada por un Controlador diferente según la ruta. Estas rutas están especificadas en la clase \textbf{app-routing.module.ts}. 
+
+ \item Dentro de la carpeta \textbf{components} tenemos cada uno de los componentes (como es el caso de login.component.ts) con las plantillas que controlan (login.component.html) y los estilos de esa plantilla (login.component.css).
+ Los componentes building, research y troops, son hijos de los componentes buildings-list, research-list y troops-list respectivamente. Es decir que estos componentes están completamente relacionados y se comunican la información constantemente entre ellos.
+
+ \item Dentro de \textbf{services} tenemos todos los servicios utilizados, que pueden ser llamados desde cualquier componente. Estos servicios hacen peticiones al servidor para obtener o modificar datos de la base de datos.
+
+ \item Dentro de la carpeta \textbf{i18n} tenemos diferentes Json utilizados para el sistema de internacionalización de la aplicación. La forma en que se utilizan estos Json se explicará en la siguiente sección.
+
+ \item Las clases \textbf{interceptor.ts} e \textbf{interceptorError.ts} interceptan las peticiones entre el cliente y el servidor. Interceptor.ts añade el token de autorización en las cabeceras de las peticiones al servidor y interceptorError borra el token del LocalStorage del navegador (cierra la sesión del usuario) y muestra la vista de login, caso de que el cliente reciba un error de autenticación.
+
+ \item Al igual que en el servidor tenemos una carpeta llamada \textbf{node\_modules} que contiene todas las dependencias instaladas y un archivo llamado \textbf{package.json} que contiene la descripción de esas dependencias. Esto es así ya que Angular también utiliza node para poder ejecutar el servidor y para poder convertir los archivos de TypeScript. En el archivo \textbf{tsconfig.json} tenemos la configuración para la compilación de archivos de TypeScript.
+\end{itemize}
+
+
+\subsection{Uso de multiples idiomas}
+\label{subsec:cliente.idiomas}
+
+Como hemos dicho, dentro de la carpeta i18n tenemos un Json para cada idioma en el que se quiera mostrar la aplicación. Estos Json incluyen todo el contenido de las vistas que quiera ser traducido. Y todos ellos deben tener el mismo contenido. Un ejemplo de uso es el siguiente:
+{\footnotesize
+\begin{verbatim}
+Archivo es.json:
+{
+    "profile": {
+        "profile": "Perfil",
+        "economy": "Economia",
+        ...
+    }, "detail": {
+        "errorLockById": "Necesario nivel {{level}} de {{name}}",
+        "errorNotRss": "Recursos insuficientes",
+        ...
+    }
+    ...
+}
+
+
+Archivo en.json:
+{
+    "profile": {
+        "profile": "Profile",
+        "economy": "Economy",
+        ...
+    }, "detail": {
+        "errorLockById": "Required level {{level}} of {{name}}",
+        "errorNotRss": "Insufficient resources",
+        ...
+    }
+    ...
+}
+\end{verbatim}
+}
+
+Las palabras entre corchetes \{\{\}\} son variables que pueden enviarse desde las plantillas.\\
+El modo de utilizar estos Json es mediante la librería Ngx-translate, de internacionalización para Angular. Dentro del servicio languages.service.ts tenemos los métodos para establecer un lenguaje por defecto y modificar el lenguaje, los cuales hacen uso del servicio TranslateService,  inyectado como dependencia desde @ngx-translate/core.
+
+El lenguaje de un usuario se extrae del almacenamiento local del navegador, donde es almacenado al iniciar la sesión, y se establece mediante las funciones anteriores.
+Para que las vistas se muestren en un idioma u otro se utilizan las directivas de traducción.
+
+Incluir un nuevo idioma sería sencillo, no habría que modificar código. Solo habría que añadir un nuevo Json con las traducciones y añadir nuevos registros en las bases de datos para incluirlo.
+
+
+\subsection{Vistas de las páginas}
+\label{subsec:cliente.vistas}
+
+A continuación se describen las páginas que componen la aplicación. Para utilizar la aplicación es necesario estar registrado, de modo que, si no se ha iniciado sesión solo se podrá acceder a la página de Login/Registro. 
+Para mejorar la visualización de las páginas he utilizado Bootstrap y CSS3. Con Bootstrap se consigue además una correcta visualización para diferentes tamaños de pantalla y dispositivos.
+
+\vspace{1cm}
+
+\textbf{Página de inicio}
+
+\vspace{0.4cm}
+
+La aplicación parte de una página de login/registro. Se muestra un formulario para iniciar sesión o registrarse. Mediante un botón en la parte de abajo del formulario se puede elegir entre una opción u otra.
+
+Se ha utilizado un formulario reactivo, sin enlace con los datos, que deja la lógica del formulario del lado del controlador. De este modo en el controlador se declara el formulario como objeto para tener control sobre su valor y su estado. A cada uno de los elementos del formulario se les asignan valores y métodos de validación, y se asocian al formulario. Estos métodos de validación comprueban si son campos obligatorios, si la longitud es correcta, si el formato del email es correcto. 
+
+La parte de arriba de todas las páginas está controlada por el componente navigation, en este caso solamente se muestra una barra superior con el titulo de la aplicación, ya que el usuario no ha iniciado sesión aún.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=16cm, keepaspectratio]{img/paginaInicio}
+  \caption{Página de inicio}
+  \label{fig:paginaInicio}
+\end{figure}
+
+
+\textbf{Página de perfil del jugador}
+
+\vspace{0.4cm}
+
+Una vez que inicias sesión se redirige a la ruta /profile.
+Ahora podemos ver que la barra de navegación ha cambiado. En el lado derecho se muestra un botón para cerrar la sesión, Logout. En el lado izquierdo información de la partida del usuario: poder y los recursos que tiene.
+Además, debajo de la barra se ha añadido un menú con 6 opciones. El perfil del usuario, la página donde estamos, es la primera de esas opciones.
+
+El resto de la página pasa a ser controlada por el componente profile. Y aparece información de la partida dividida en 3 pestañas.
+En la primera pestaña, perfil, se muestran datos del usuario: el nombre, el poder, el idioma elegido, etc. Tenemos también un botón de configuración que permite modificar el idioma elegido: al pinchar en el botón aparece una modal de Bootstrap con un campo select para elegir el idioma.
+
+En la segunda pestaña se muestran las estadísticas y mejoras relacionadas con la parte del juego económica, más adelante podremos ver de dónde salen estas mejoras: la producción de recursos por hora, la velocidad de construcción, etc.
+En la tercera pestaña se muestran las estadísticas y mejoras relacionadas con la parte militar, aquello relacionado con las tropas, el ataque, la defensa.
+
+\vspace{0.4cm}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=16cm, keepaspectratio]{img/paginaPerfil}
+  \caption{Página del perfil de un jugador}
+  \label{fig:paginaPerfil}
+\end{figure}
+
+
+\textbf{Página de edificios} 
+
+\vspace{0.4cm}
+
+Al pulsar en el menú sobre la opción Edificios se redirige a la ruta /buildings.
+Podemos ver como la parte de arriba de la página se mantiene, la navegación, que como hemos dicho es fija.
+
+Ahora el resto de la página pasa a ser controlado por el componente buildings-list, que a su vez divide la página. El lado derecho queda entonces controlado por su hijo, el componente buildings.
+
+Podemos ver, en el lado izquierdo, una lista con todos los edificios disponibles.\\
+Cada edificio tiene una funcionalidad diferente, permite crear soldados, genera recursos, etc. Al pinchar en un edificio de la lista nos lo muestra más detalladamente: vemos para qué sirve el edificio, si se puede o no subir de nivel, las mejoras que supondría subirlo de nivel, el coste en recursos y tiempo.\\
+También es posible que no pudiera mejorarse el edificio, bien porque ya ha alcanzado el máximo nivel, o porque no tenemos recursos suficientes, o quizá porque primero es necesario alcanzar cierto nivel con otros edificios.
+Además, solo es posible poner en construcción un único edificio a la vez. Cuando se está construyendo un edificio aparece un mensaje en la parte superior de la lista con el edificio en cuestión y una cuenta atrás para su finalización. Esta cuenta atrás aparece también dentro del detalle del edificio.
+
+\vspace{0.4cm}
+
+\begin{figure} [H]
+  \centering
+  \includegraphics[width=17cm, keepaspectratio]{img/paginaEdificios}
+  \caption{Página de edificios}
+  \label{fig:paginaEdificios}
+\end{figure}
+
+
+\textbf{Página de tropas}
+
+\vspace{0.4cm}
+
+La tercera opción del menú, Tropas, redirige a la ruta /troops.
+El componente troops-list se encarga de mostrar un desplegable en el lado derecho de la pantalla, con los tipos de tropas que existen (Infantería, Caballería y Arqueros) y al desplegar podemos ver todas las tropas disponibles de cada tipo.
+
+En el lado derecha, controlado por el componente troops, aparece el detalle de una tropa, una vez que se ha pulsado sobre ella.
+Para cada tipo de tropas existe un edificio que permite crearlas. Y dependiendo del nivel del edificio solo se podrán crear ciertas tropas de ese tipo.
+Cuando haya tropas entrenándose aparecerá, en el propio desplegable con la lista y dentro del detalle la información, el tiempo restante y el número de tropas que hay creándose.
+
+\vspace{0.4cm}
+
+\begin{figure} [H]
+  \centering
+  \includegraphics[width=17cm, keepaspectratio]{img/paginaTropas}
+  \caption{Página de tropas}
+  \label{fig:paginaTropas}
+\end{figure}
+
+\textbf{Página de Investigaciones}
+
+\vspace{0.4cm}
+
+La tercera opción del menú, Investigaciones, redirige a la ruta /research.
+Funciona de forma muy parecida a los edificios.
+En este caso es el componente research-list, quien controla el lado izquierdo de la página, y su hijo, el componente research, quien controla el derecho.
+
+En el lado izquierdo aparece una lista con todos las Investigaciones disponibles. Las investigaciones son mejoras, por ejemplo, un incremento en la velocidad con la que se crean las tropas. Al pinchar en una investigación de la lista nos muestra su detalle: para que sirve, que características mejora, el coste en recursos y tiempo.
+Las investigaciones también pueden estar bloqueadas. Dependiendo del nivel del edificio Academia, habrá unas u otras investigaciones disponibles para desarrollar.
+Solo es posible poner una investigación en marcha a la vez y aparece en la parte superior de la lista con una cuenta atrás para su finalización.
+
+\vspace{0.4cm}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=16cm, keepaspectratio]{img/paginaInvestigaciones}
+  \caption{Página de investigaciones}
+  \label{fig:paginaInvestigaciones}
+\end{figure}
+
+
+
+\textbf{Página de ataques}
+
+\vspace{0.4cm}
+
+La quinta opción del menú, Ataques, redirige a la ruta /war.
+Desde aquí podemos atacar a otros jugadores.
+
+En el lado izquierdo aparece una lista con 30 jugadores rellena con jugadores que te hayan atacado en algún momento y el resto jugadores aleatoriamente generados.
+
+Para atacar simplemente hay que seleccionar a que jugador de la lista queremos atacar y las tropas con las que queremos hacerlo.
+
+Al finalizar la batalla se muestra un informe mediante una modal de Bootstrap con el resultado del combate. En ella aparecen dos tablas, una para cada participante, con las tropas iniciales, las tropas muertas, los heridos durante la batalla y los supervivientes. Y en el caso de que el atacante salga victorioso del combate se muestra una tercera tabla más con los recursos robados al defensor, en el caso de que el defensor tuviera recursos y el atacante capacidad de carga para llevarselos. Esto se detallara más adelante, junto con el sistema de batalla utilizado.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=16cm, keepaspectratio]{img/paginaAtaques}
+  \caption{Página de ataques}
+  \label{fig:paginaAtaques}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=18cm, keepaspectratio]{img/paginaInforme}
+  \caption{Informe}
+  \label{fig:paginaInforme}
+\end{figure}
+
+\clearpage
+
+\textbf{Página de informes}
+
+\vspace{0.4cm}
+
+La sexta y ultima opción del menú, Informes, redirige a la ruta /reports, controlada por el componente reports.
+Aquí se muestra una tabla con los informes de las batallas realizadas, tanto si hemos sido atacantes como defensores. 
+La lista muestra a ambos jugadores y el rol de cada uno, el resultado de la batalla y la hora y día a la que fue realizado el ataque. 
+
+Al pinchar sobre una de las filas tabla se nos abre un informe igual que el mostrado tras realizar un ataque: con tablas de tropas una para cada jugador, y los recursos si el atacante sale victorioso. Es decir, en este caso, como no somos siempre el atacante, puede salir una tabla con los recursos perdidos, no solo ganados.
+
+Cuando un informe aún no ha sido ``leído'' aparece en color rojo para diferenciarlo del resto. Una vez que hemos pinchado en el y aparece el informe cambia de color y se pone blanco.
+
+\vspace{0.4cm}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=16cm, keepaspectratio]{img/paginaInformes}
+  \caption{Página de informes}
+  \label{fig:paginaInformes}
+\end{figure}
+
+
+\subsection{Sistema de ataques}
+\label{subsec:cliente.sistataques}
+
+El sistema de batalla funciona por rondas. En cada ronda de la batalla hay un ataque y un contraataque, es decir, primero el jugador 1 ataca al jugador 2 y después el jugador 2 pasa a ser el atacante y el jugador 1 el defensor. En los dos partes de la ronda ambos jugadores cuentan con todas las tropas con las que iniciaron la ronda. Los soldados muertos o heridos no se restan hasta terminada la ronda.
+
+El ataque y el contraataque se realiza de la misma manera. Cada tropa del jugador atacante ataca a cada tropa del defensor en proporción a las tropas del defensor, así dañamos equitativamente a todas las tropas. Sin importar nivel ni tipo de tropa. Esto puede verse en la figura~\ref{fig:repartoSoldados}.
+
+\vspace{0.4cm}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=15cm, keepaspectratio]{img/repartoSoldados}
+  \caption{Reparto de soldados en un ataque}
+  \label{fig:repartoSoldados}
+\end{figure}
+
+Este reparto de tropas puede realizarse ya que en la formula de cálculo del daño no se basa en el número de defensores si no en el número de atacantes, por lo que a mismo tipo de tropas, si dividimos el resultado sería el mismo que si no lo hiciéramos. Dividimos por dos razones, primero porque cada tipo de tropa tendrá diferente defensa, y en segundo lugar, cada tropa tiene un tipo de tropa a la que es más vulnerable.
+
+\vspace{0.4cm}
+\textbf{Cálculo del daño}
+
+{\footnotesize
+\begin{verbatim}
+Daño a la vida = 10 * e^(0,03 * Diferencia de fuerza) 
+    * (Precisión de la tropa) * (aleatorio entre 80% y 120%) 
+    * (Modificador tipo tropa)
+
+Diferencia de fuerza = ataque total tropa atacante - 
+    defensa total tropa defensora
+
+Ataque tropa atacante = ataque tropa * bonus investigaciones de ataque
+Ataque tropa atacante = defensa tropa * bonus investigaciones de defensa
+Modificador tipo tropa = 1.25 + e^(nivel tropa atacante * 0.42) * 0.1;
+\end{verbatim}
+}
+
+La formula se basa en un factor de daño base, digamos que entendemos que cuando golpeamos, el golpe siempre lleva un mínimo de daño, que se verá incrementado en función del ataque de nuestras tropas o se verá reducido debido a la defensa del defensor. El factor mínimo escogido es 10, modificarlo haría que variara el número de rondas en la batalla.
+
+\vspace{0.4cm}
+La exponencial se utiliza para calcular el aumento del daño en función de la diferencia de fuerzas.
+La diferencia de fuerza es el ataque total de la tropa atacante menos la defensa total de la tropa defensora.\\
+El ataque total está formado por el ataque de la tropa en cuestión por el porcentaje de mejora de ataque conseguido a través de las investigaciones. La defensa total se calcula de la misma manera.\\
+El modificador 0.03 se ha elegido para ajustar el crecimiento del daño según la diferencia de fuerza. Si este valor es más grande a poca diferencia de fuerzas el daño podría ser exagerado. Cuanto más pequeño sea este valor mayor margen tendremos en diferencia de fuerzas antes de que el valor se dispare de forma aplastante (Es lógico que una tropa de 250 de ataque aplaste sin problemas a otra de 80 defensa, incluso de forma exagerada... pero sino, se puede controlar cambiando este parámetro).
+
+\vspace{0.4cm}
+La precisión de la tropa es número, entre 0 y 1, que indica que puntería tiene la tropa. A mayor nivel de la tropa mejor puntería.
+
+\vspace{0.4cm}
+Suerte, incluimos un factor suerte, que puede hacer bajar el rendimiento de la tropa o aumentarlo para causar más daño, hacemos que el daño final esté entre el 80\% y el 120\% en función de un número aleatorio.
+
+\vspace{0.4cm}
+Cada tipo de tropa es mejor o peor frente a otros tipos de tropas y esto mejora u empeora el ataque según el cálculo puesto, que va acorde con el crecimiento. La relación sería:
+\begin{itemize}
+  \item La infantería es fuerte contra la caballería y débil contra los arqueros.
+  \item La caballería es fuerte contra los arqueros y débil contra la infantería.
+  \item La arqueros son fuerte contra la infantería y débil contra la caballería.
+\end{itemize}
+
+El jugador defensor de la batalla (no el de la ronda), cuenta ademas con un suplemento de defensa.
+
+\vspace{0.4cm}
+
+\textbf{Cálculo de Muertes}
+
+\vspace{0.4cm}
+
+El cálculo de las muertes se realiza de la siguiente manera:
+{\footnotesize
+\begin{verbatim}
+Muertes = Nº unidades tropa atacante * Daño a la vida / vida tropa defensora
+\end{verbatim}
+}
+Pero en un ataque puede haber muertos y/o heridos.
+
+Los heridos son un porcentaje de los muertos calculados en función del poder de la defensa y la vida de las tropas, cuanto mayor sea la defensa más proporción de heridos se conseguirá. Si la defensa supera al ataque, no habrá muertos, mientras que un ataque demasiado poderoso, podría provocar cero heridos, todo muertos.
+
+Como hemos dicho al finalizar la ronda se restan los muertos a las tropas de cada jugador. Pero también se restan temporalmente los heridos, no podrán participar en las rondas restantes. Al finalizar el combate cada jugador recuperará las tropas heridas.
+
+\vspace{0.7cm}
+
+El número máximo de rondas viene dado por, o bien, un valor fijo de 250 rondas o un límite de tropas perdidas del 85\%  por parte de alguno de los jugadores.
+
+\vspace{0.3cm}
+Al finalizar el combate se restan las tropas totales muertas de cada jugador y el poder perdido con esas tropas muertas.
+En el caso de que el jugador atacante salga victorioso se realiza el cálculo de los posibles recursos robados al enemigo.
+
+\vspace{0.4cm}
+
+\textbf{Cálculo de recursos ganados}
+
+\vspace{0.4cm}
+Para realizar el cálculo se tiene en cuenta dos cosas, la cantidad de recursos que puede perder el jugador defensor y la cantidad de recursos que puede transportar el jugador atacante: 
+{\footnotesize
+\begin{verbatim}
+  Los recursos que puede perder el defensor = La cantidad de recursos que 
+  tiene el defensor - la cantidad de recursos protegidos por el edificio 
+  Almacén
+\end{verbatim}
+}
+Esto se realiza para cada tipo de recurso. A mayor nivel del edificio en cuestión mayor número de recursos protegidos.
+Por otro lado, se calcula:
+{\footnotesize
+\begin{verbatim}
+  El número de recursos que puede transportar el atacante = número de 
+  tropas sanas (sin heridos) * la capacidad de carga de los diferentes
+  tipos de tropas.
+\end{verbatim}
+}
+
+Si la capacidad de carga del atacante es mayor que los recursos que puede perder el defensor se llevará todos ellos, en caso contrario, se llevará de cada tipo de recurso una cantidad realizada de manera proporcional a la cantidad de ese recurso que hay disponible y de manera que la suma de los tres tipos iguale el máximo de su capacidad de carga. Es decir que por ejemplo:
+{\footnotesize
+\begin{verbatim}
+Si el defensor dispone de:
+      200000 de comida , 100000 de madera y 50000 de oro
+Y la capacidad máxima de carga es 100000 la cantidad robada será:
+      57142.86 de comida, 28571.43 de madera y 14285.71 de oro
+\end{verbatim}
+}
+
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -416,10 +1157,8 @@ Si utilizas una base de datos, no te olvides de incluir también un diagrama de e
 
 \cleardoublepage
 \chapter{Resultados}
+\label{chap:resultados}
 
-En este capítulo se incluyen los resultados de tu trabajo fin de grado.
-
-Si es una herramienta de análisis lo que has realizado, aquí puedes poner ejemplos de haberla utilizado para que se vea su utilidad.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -431,44 +1170,50 @@ Si es una herramienta de análisis lo que has realizado, aquí puedes poner ejempl
 \chapter{Conclusiones}
 \label{chap:conclusiones}
 
-
-\section{Consecución de objetivos}
-\label{sec:consecucion-objetivos}
-
-Esta sección es la sección espejo de las dos primeras del capítulo de objetivos, donde se planteaba el objetivo general y se elaboraban los específicos.
-
-Es aquí donde hay que debatir qué se ha conseguido y qué no. 
-Cuando algo no se ha conseguido, se ha de justificar, en términos de qué problemas se han encontrado y qué medidas se han tomado para mitigar esos problemas.
-
-
 \section{Aplicación de lo aprendido}
 \label{sec:aplicacion}
 
-Aquí viene lo que has aprendido durante el Grado/Máster y que has aplicado en el TFG/TFM. Una buena idea es poner las asignaturas más relacionadas y comentar en un párrafo los conocimientos y habilidades puestos en práctica.
+En la realización de este proyecto he podido poner en práctica mis conocimientos adquiridos durante el grado sobre todo en cuestiones de bases de datos relacionales, HTML, CSS3 y JavaScript.
+Las demás asignaturas relacionadas con la programación me han sido útiles de igual modo, ya que aún tratándose de lenguajes o tecnologías diferentes, aportan conocimientos sobre el funcionamiento y la forma de desarrollar una aplicación.
 
-\begin{enumerate}
-  \item a
-  \item b
-\end{enumerate}
+La asignatura más relacionada en cuanto a tecnologías es Desarrollo de aplicaciones telemáticas. Es en esta asignatura donde adquirí mis principales conocimientos sobre Javascript, HTML5, CSS3 y distintas APIs de Google.
+
+En Ingeniería de sistemas de información aprendí a construir una aplicación completa usando herramientas para el desarrollo en equipo. Y adquirí mis conocimientos sobre bases de datos.
+
+Otras asignaturas relacionadas son también Arquitectura de redes de ordenadores, Sistemas telemáticos y Servicios y aplicaciones telemáticas, en ellas aprendí lo que era una aplicación REST, el funcionamiento de los protocolos y peticiones HTTP, entre otras cosas.
 
 
 \section{Lecciones aprendidas}
 \label{sec:lecciones_aprendidas}
 
-Aquí viene lo que has aprendido en el Trabajo Fin de Grado/Máster.
+Ha supuesto un reto enfrentarse a un proyecto de esta envergadura y más aún tratándose, en su mayoría, de tecnologías que desconocía y que nunca había utilizado, como son Angular, junto con el lenguaje TypeScript, Nodejs y Bootstrap. 
 
-\begin{enumerate}
-  \item a
-  \item b
-\end{enumerate}
+He podido aprender mucho sobre el desarrollo de aplicaciones escalables y de programación asíncrona, sin bloqueos, que me ha proporcionado también muchos quebraderos de cabeza.
+
+A pesar de estar basado en Javascript y ser similar, Typescript junto con Angular suponen una manera totalmente diferente de programar de lo que conocía hasta ahora con Javascript. También puedo decir que Angular facilita el mantenimiento y desarrollo de una aplicación de gran envergadura. 
+
+Por otro lado, con Bootstrap he aprendido nuevas formas de mejorar el aspecto visual de las aplicaciones web y de darles un diseño responsive de forma más sencilla. 
+
+También he afianzado mis conocimientos sobre bases de datos, cosa que he utilizado mucho para la realización del proyecto y que hasta ahora apenas las había empezado a usar.
+
+Para la realización de esta memoria he utilizado otra herramienta que desconocía, Latex, que ha resultado muy útil para conseguir una buena presentación de la memoria.
 
 
 \section{Trabajos futuros}
 \label{sec:trabajos_futuros}
 
-Ningún software se termina, así que aquí vienen ideas y funcionalidades que estaría bien tener implementadas en el futuro.
+Este aplicación es solo el comienzo de lo que podría llegar a ser este juego. A un software siempre se le pueden realizar mejoras o añadir nuevas funcionalidades, y como tal, este juego no se queda atrás.
 
-Es un apartado que sirve para dar ideas de cara a futuros TFGs/TFMs.
+Para empezar, la parte más importante que se podría añadir a este juego sería una interfaz visual atractiva, que incluyera mapas e imágenes completas de ciudades, batallas que pudieran visualizarse, etc. 
+Y en estos mapas no tendría por qué haber solo las ciudades de los jugadores, o limitarnos a movernos entre ellas, podría haber otros elementos como por ejemplo mares y barcos para poder cruzar, etc.
+
+También se podrían añadir opciones para permitir la iteración y colaboración con otros jugadores, como poder comunicarte con ellos, intercambios de materiales e incluso tropas, la realización de torneos o eventos para que los jugadores compitieran.
+
+Las batallas se podrían modificar de forma que el jugador tomara más partido en ellas, no solo mediante la elección de las tropas adecuadas, si no por ejemplo eligiendo el orden exacto en el que quiere que ataquen sus tropas, o el orden de los objetivos, etc, lo cual modificaría por completo el resultado de una batalla aún con las mismas tropas. También se puede añadir la realización de espionajes, de ataques conjuntos, etc.
+
+Habría multitud de nuevas posibilidades.
+
+Como ya he dicho también el acceso de los jugadores no está limitado, cada jugador puede tener el número de cuentas que desee, esto podía modificarse y establecer un límite de cuenta por persona.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -497,7 +1242,8 @@ Es un apartado que sirve para dar ideas de cara a futuros TFGs/TFMs.
 % que se conoce como BibTeX. Hay muchos sitios que exportan referencias en
 % formato BibTeX. Prueba a buscar en http://scholar.google.com por referencias
 % y verás que lo puedes hacer de manera sencilla.
-% Más información: 
+% Más información:
 % http://texblog.org/2014/04/22/using-google-scholar-to-download-bibtex-citations/
+
 
 \end{document}
