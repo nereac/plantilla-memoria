@@ -1,3 +1,4 @@
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Plantilla de memoria en LaTeX para la ETSIT - Universidad Rey Juan Carlos
 %%
@@ -227,7 +228,7 @@ El 54\% de la población Europea juega a videojuegos una media de 7.5 horas a la 
 
 El videojuego es la primera opción de ocio de los españoles, más concretamente en 2018, España contaba con 15.8 millones de jugadores, según la AEVI\footnote{\url{http://www.aevi.org.es/mas-15-millones-espanoles-juegan-videojuegos/}} (Asociación española de videojuegos). Pero España sigue siendo más un país consumidor que dedicados a la producción y desarrollo de videojuegos.
 
-Esto me ha llevado a comprobar el reto que supone la realización de un videojuego. El tipo de juego elegido es un juego de guerra de estrategia, en tiempo real, multijugador y online. Cada jugador se enfrentará a los demás jugadores. Cada uno de ellos dispondrá de una ciudad, la cual tendrá que desarrollar y proteger del resto de jugadores
+Esto me ha llevado a comprobar el reto que supone la realización de un videojuego. El tipo de juego elegido es un juego de guerra de estrategia, en tiempo real, multijugador y online. Cada jugador se enfrentará a los demás jugadores. Cada uno de ellos dispondrá de una ciudad, la cual tendrá que desarrollar y proteger del resto.
 
 El juego debe ser capaz de dar acceso a gran cantidad de usuarios y proporcionar soporte en múltiples idiomas. Para la realización se han escogido tecnologías que se han popularizado bastante estos últimos años, y que me gustaría poder llegar a conocer bien, como son Nodejs y Angular. Además Node proporciona altas concurrencias, lo que es adecuado para el juego.
 
@@ -240,7 +241,7 @@ La memoria está estructurada de la siguiente manera:
  \item \textbf{Capítulo~\ref{chap:intro}. Introducción:} en este primer capítulo se realiza una descripción general del proyecto, especificando la estructura del mismo.
  \item \textbf{Capítulo~\ref{chap:objetivos}. Objetivos:} se exponen los objetivos que se pretenden conseguir con la realización de este proyecto.
  \item \textbf{Capítulo~\ref{chap:arte}. Estado del arte:} contiene una descripción de las tecnologías utilizadas para desarrollar la aplicación.
- \item \textbf{Capítulo~\ref{chap:implementacion}. Diseño e implementación:} este capítulo se explica el funcionamiento de la aplicación y cómo ha sido diseñada y desarrollada.
+ \item \textbf{Capítulo~\ref{chap:implementacion}. Diseño e implementación:} en este capítulo se explica el funcionamiento de la aplicación y cómo ha sido diseñada y desarrollada.
  \item \textbf{Capítulo~\ref{chap:resultados}. Resultados:} se realiza un análisis de los resultados obtenidos.
  \item \textbf{Capítulo~\ref{chap:conclusiones}. Conclusiones:} conclusiones tras la realización del proyecto.
 \end{itemize}
@@ -259,33 +260,10 @@ La memoria está estructurada de la siguiente manera:
 \section{Objetivo general} % título de sección (se muestra)
 \label{sec:objetivo-general} % identificador de sección (no se muestra, es para poder referenciarla)
 
-El objetivo de mi trabajo fin de grado consiste en desarrollar de un videojuego online de estrategia en tiempo real y multijugador al que se pueda acceder a través de un navegador.
-
 
 \section{Objetivos específicos}
 \label{sec:objetivos-especificos}
 
-
-
-% cualquier plataforma
-% Sencillez de uso
-% Soporte en multiples idiomas.
-% Acceso a gran cantidad de usuario.
-% Ejecución en tiempo real.
-% juego contra otros
-% sistema de batalla
-% Uso de tecnologias 
-
-
-\section{Planificación temporal}
-\label{sec:planificacion-temporal}
-
-%4 mese muy intensos
-%Definición de la estructura de la base de datos
-%REalizacion del servidor mediante el uso de postman
-%Desarrollo de la aplicación web 
-%Mejora de aspecto
-%Elaboración de la memoria.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -302,32 +280,32 @@ Para el desarrollo del proyecto se han utilizado una serie de tecnologías ya exi
 \section{Angular}
 \label{sec:angular}
 
-Angular~\cite{angular} es un entorno de desarrollo de front-end que facilita la construcción de aplicaciones en HTML y Typescript.
+Angular~\cite{angular} es un entorno de desarrollo de front-end que facilita la construcción de aplicaciones en HTML y TypeScript.
 Se trata de un framework de código abierto, creado por Google. Hay diferentes versiones de Angular, la primera de ellas es conocida como Angularjs y es totalmente diferente a las versiones posteriores, que se las conoce simplemente como Angular y que son mejoras de Angular 2.
 
 \vspace{0.4cm}
 Angular se utiliza para el desarrollo de aplicaciones web SPA, aplicaciones de una sola página (Single page aplication).
 Estas aplicaciones no recargan la página en ningún momento y la carga de datos es completamente asíncrona con el servidor. Este tipo de web son completamente dinámicas, el cambio entre las diferentes secciones de la web o entre las diferentes urls de la web es prácticamente instantáneo, dinámico y reactivo. Las aplicaciones web SPA se han popularizado bastante estos últimos años y crearlas no es una tarea sencilla sin ningún framework, esto es una de las razones que han hecho a Angular tan popular.
-Es el entorno de desarrollo front-end más popular del mundo\\
-También es posible utilizar angular para crear aplicaciones móviles, a través de otro complemento conocido como Ionic, y aplicaciones de escritorio.
+Es el entorno de desarrollo front-end más popular del mundo.\\
+También es posible utilizar Angular para crear aplicaciones móviles, a través de otro complemento conocido como Ionic, y aplicaciones de escritorio.
 
 \vspace{0.4cm}
-La manera más estándar de programar con Angular es mediante el lenguaje typescript, que luego es compilado a javascript.
+La manera más estándar de programar con Angular es mediante el lenguaje TypeScript, que luego es compilado a JavaScript.
 La estructura de Angular se basa en 4 tipos principales de clases, que son simples clases con decoradores que marcan de que tipo son y proveen los metadatos necesarios para que Angular sepa cómo usarlas.
 
 \vspace{0.4cm}
 \textbf{Módulos:} En los módulos se especifican las dependencias de las aplicaciones, las clases que serán inyectables, los componentes que va a contener y cuál de ellos será el principal.\\
 Cada aplicación de Angular tiene un módulo raíz, llamado convencionalmente AppModule, que proporciona el mecanismo de arranque de la aplicación.\\
-Al igual que los módulos de Javascript se pueden importar y exportar funcionalidades y permitir que sean utilizadas por otros módulos. De este modo, si se trata de aplicaciones muy grandes pueden tener varios módulos, uno para cada funcionalidad. Esta organización ayuda a gestionar el desarrollo de las aplicaciones complejas y a la reutilización. Además, de este modo se minimiza la cantidad de código que se carga al inicio, cargando los módulos a pedido.
+Al igual que los módulos de JavaScript, se pueden importar y exportar funcionalidades y permitir que sean utilizadas por otros módulos. De este modo, si se trata de aplicaciones muy grandes pueden tener varios módulos, uno para cada funcionalidad. Esta organización ayuda a gestionar el desarrollo de las aplicaciones complejas y a la reutilización. Además, de este modo se minimiza la cantidad de código que se carga al inicio, cargando los módulos a pedido.
  
 \vspace{0.4cm}
 \textbf{Componentes:} Un componente es el controlador de una vista, es decir, controla una parte de lo que aparece en pantalla.\\
 Para convertir la clase en componente se usa el decorador  @Component, en el que se especifica cómo se va a mostrar este componente utilizando un template, una plantilla HTML que define una vista, y para definir su comportamiento se utilizan los atributos de la clase y sus métodos.\\
 Los componentes pueden tener sub-componentes y cada aplicación Angular tiene al menos un componente, el componente raíz, que conecta de manera jerárquica el resto de componentes.\\
-Para que un componente se pueda comunicar con otros sub-componentes existen dos mecanismos, para enviar datos se utilizan propiedades y para recibirlos se utilizan eventos. Para implementar esa comunicación se usan binding(uniones).
+Para que un componente se pueda comunicar con otros sub-componentes existen dos mecanismos, para enviar datos se utilizan propiedades y para recibirlos se utilizan eventos. Para implementar esa comunicación se usan binding (uniones).
 
 \vspace{0.4cm}
-\textbf{Directivas:} son clases que define palabras clave a usar dentro de las plantillas. Cuando angular las procesa transforma el DOM de acuerdo a lo especificado por las directivas. Pueden ser estructurales si modifican el diseño o de atributo si modifican la apariencia o comportamiento de un componente.\\
+\textbf{Directivas:} son clases que definen palabras clave a usar dentro de las plantillas. Cuando Angular las procesa transforma el DOM de acuerdo a lo especificado por las directivas. Pueden ser estructurales, si modifican el diseño, o de atributo, si modifican la apariencia o comportamiento de un componente.\\
 Las plantillas combinan HTML con el marcado de Angular, como son las directivas y los bidings, uniones o enlaces entre los datos de la aplicación y el DOM.
 
 \vspace{0.4cm}
@@ -337,30 +315,30 @@ Se puede utilizar un mismo servicio dentro de múltiples componentes fácilmente g
 
 \subsection{Angular CLI}
 \label{subsec:angularCli}
-Angular CLI~\cite{angular:cli} es una herramienta de línea de comandos utilizada para inicializar, desarrollar y mantener aplicaciones de Angular. Facilita mucho el proceso de inicio de cualquier aplicación con Angular, ya que mediante un sólo comando puedes obtener todo el esqueleto de una aplicación. Al crear un proyecto genera también un archivo de configuración, estos valores se pueden modificar editando el archivo o por línea de comandos. También permite agregar nuevos componentes, servicios, directivas, etc.\\
-Angular cli incluye además un servidor, herramientas de compilación, testing, despliegue del proyecto, etc.
+Angular CLI~\cite{angular:cli} es una herramienta de línea de comandos utilizada para inicializar, desarrollar y mantener aplicaciones de Angular. Facilita mucho el proceso de inicio de cualquier aplicación con Angular, ya que mediante un solo comando puedes obtener todo el esqueleto de una aplicación. Al crear un proyecto genera también un archivo de configuración, cuyos valores se pueden modificar editando el archivo o por línea de comandos. También permite agregar nuevos componentes, servicios, directivas, etc.\\
+Angular Cli incluye además un servidor, herramientas de compilación, testing, despliegue del proyecto, etc.
 
 
 \subsection{Ngx-tranlate}
 \label{subsec:ngx-tranlate}
-Es una librería de Angular~\cite{ngx-translate} para la internacionalización de una aplicación. Permite definir traducciones para el contenido de la aplicación, en diferentes idiomas, y cargar dinámicamente estas traducciones, es decir que podemos cambiar de un idioma a otro sin necesidad de recargar la pantalla y de manera sencilla.
+Es una librería de Angular~\cite{ngx-translate} para la internacionalización de una aplicación. Permite definir traducciones para el contenido de la aplicación, en diferentes idiomas, y cargar dinámicamente estas traducciones, es decir, podemos cambiar de un idioma a otro sin necesidad de recargar la pantalla y de manera sencilla.
 
 \vspace{0.5cm}
-Ngx-translate pone a nuestra disposición un servicio de traducción, pipe y directivas que nos ofrecen diferentes formas de realizar las traducciones; y métodos para establecer los idiomas disponibles, seleccionar el idioma por defecto de la aplicación, cambiar de idioma, etc. \\
-Estas traducciones se guardan en archivos Json y ofrece la posibilidad de incluir variables en las traducciones.
+Ngx-translate pone a nuestra disposición un servicio de traducción, pipe y directivas, que nos ofrecen diferentes formas de realizar las traducciones, y métodos para establecer los idiomas disponibles, seleccionar el idioma por defecto de la aplicación, cambiar de idioma, etc. \\
+Estas traducciones se guardan en archivos Json y ofrecen la posibilidad de incluir variables en las traducciones.
 
 \vspace{0.5cm}
 Para utilizarlo es necesario importar los módulos y provedores: TranslateLoader, TranslateModule y TranslateHttpLoader. Y configurar el módulo de traducción, TranslateModule, para utilizar un cargador personalizado. TranslateHttpLoader se encargará de la carga de los distintos archivos de idiomas desde src/assets/i18n/ utilizando HttpClient. También es posible cambiar la ruta y la extensión de archivo predeterminadas mediante su configuración.
 
 
-\section{Typescript}
+\section{TypeScript}
 \label{sec:typescript}
 
 TypeScript~\cite{typescript} un lenguaje de programación, de código abierto y desarrollado por Microsoft.
 Nació como una necesidad de mejorar algunos problemas de JavaScript, entre ellos el hecho de que es bastante complicado crear aplicaciones a gran escala con JavaScript. Está pensado para el desarrollo de aplicaciones robustas y escalables, y se puede utilizar tanto en el lado del cliente como en el del servidor junto a Nodejs.
 
 \vspace{0.4cm}
-TypeScript es un superset de JavaScript, es decir que se trata de un lenguaje basado en JavaScript. Los programas de JavaScript son programas válidos de TypeScript. Esto permite integrar JavaScript en proyectos ya existentes, sin tener que rehacer todo el proyecto en TypeScript, ya que todo el código TypeScript se compila en JavaScript nativo.\\
+TypeScript es un superset de JavaScript, es decir, se trata de un lenguaje basado en JavaScript. Los programas de JavaScript son programas válidos de TypeScript. Esto permite integrar JavaScript en proyectos ya existentes, sin tener que rehacer todo el proyecto en TypeScript, ya que todo el código TypeScript se compila en JavaScript nativo.\\
 Algunas de las características de TypeScript son:
 \begin{itemize}
   \item Pone a nuestra disposición las herramientas de JavaScript ES6 (Ecmascript 6). De esta manera se mantiene a la vanguardia con las ultimas mejoras de JavaScript.
@@ -372,10 +350,10 @@ Algunas de las características de TypeScript son:
 \section{Mysql}
 \label{sec:mysql}
 
-Es un sistema de administración de base de datos relacional. MYSQL~\cite{Mysql} almacena los datos en tablas estructuradas, utiliza múltiples tablas conectadas por un campo en común, que hace posible combinar datos de las diferentes tablas. Lo que supone mayor velocidad y flexibilidad.\\
-Es un gestor multi-hilo lo que le permite manejar muchas tareas al mismo tiempo y ser utilizado por varias personas sin tener que esperar a que otros terminen sus consultas o procesos, lo que lo hace sumamente versátil.
+Es un sistema de administración de base de datos relacional. MYSQL~\cite{Mysql} almacena los datos en tablas estructuradas, utiliza múltiples tablas conectadas por un campo en común, que hace posible combinar datos de las diferentes tablas, lo que supone mayor velocidad y flexibilidad.\\
+Es un gestor multi-hilo, le permite manejar muchas tareas al mismo tiempo y ser utilizado por varias personas sin tener que esperar a que otros terminen sus consultas o procesos, lo que lo hace sumamente versátil.
 
-Mysql cuenta con una licencia dual, por una parte, es de código abierto (licencia pública general), y por otra, cuenta con una licencia comercial gestionada por Oracle Corporation.
+Mysql cuenta con una licencia dual. Por una parte, es de código abierto (licencia pública general), y por otra, cuenta con una licencia comercial gestionada por Oracle Corporation.
 
 Es muy utilizado en entornos de desarrollo web. Se la considera la base de datos de código abierto más popular y una de las más populares en general junto a Oracle y Microsoft SQL Server.
 
@@ -386,7 +364,8 @@ Es muy utilizado en entornos de desarrollo web. Se la considera la base de datos
 Node~\cite{node} es un entorno de ejecución de JavaScript controlado por eventos asíncronos, diseñado para construir aplicaciones de red escalables.\\
 Fue creado por Ryan Dahl en 2009 y está influenciado por sistemas como Event Machine de Ruby ó Twisted de Python.
 
-Cuando se utiliza JavaScript en el lado del cliente, es el navegador quien, a través de un programa interno (un motor), interpreta el código JavaScript. De este mismo modo, Node proporciona un entorno de ejecución JavaScript del lado del servidor, haciendo uso del motor JavaScript V8 de Google. Un motor JavaScript se encarga de interpretar el código y ejecutarlo. El motor v8 es el motor que Google usa en su navegador Chrome y es posible descargarlo e incorporarlo a cualquier aplicación.
+Cuando se utiliza JavaScript en el lado del cliente, es el navegador quien, a través de un programa interno (un motor), interpreta el código JavaScript. De este mismo modo, Node proporciona un entorno de ejecución JavaScript del lado del servidor, haciendo uso del motor V8 de Google, que se encarga de interpretar el código y ejecutarlo. \\
+El motor V8 es aquel que Google usa en su navegador Chrome y es posible descargarlo e incorporarlo a cualquier aplicación.
 
 Node está pensado para soportar concurrencias muy altas gracias a su naturaleza asíncrona. El modelo de concurrencia más común consiste en la utilización de hilos del sistema operativo. Se genera un nuevo hilo para cada conexión, de modo que, a mayor cantidad de personas, mayor cantidad de recursos consumidos del servidor y mayor número de servidores son necesarios. Node emplea un único hilo y un bucle de eventos asíncrono. Las nuevas peticiones son tratadas como eventos en este bucle, sin que se produzca ningún tipo de bloqueo en el flujo de trabajo.
 
@@ -394,9 +373,9 @@ Node está pensado para soportar concurrencias muy altas gracias a su naturaleza 
 \subsection{NPM}
 \label{subsec:npm}
 
-Node package manager~\cite{NPM} es el administrador de paquetes de Node.js.  Con él podemos instalar cualquier paquete Node.js que lleguemos a necesitar para nuestros proyectos, con una sola línea de código. Ayuda a administrar nuestros módulos, distribuir paquetes y agregar dependencias de forma sencilla. Esta escrito enteramente en JavaScript y fue desarrollado por Isaac Z. Schlueter.
+Node package manager~\cite{NPM} es el administrador de paquetes de Node.js. Con él podemos instalar cualquier paquete Node.js que lleguemos a necesitar para nuestros proyectos, con una sola línea de código. Ayuda a administrar nuestros módulos, distribuir paquetes y agregar dependencias de forma sencilla. Está escrito enteramente en JavaScript y fue desarrollado por Isaac Z. Schlueter.
 
-NPM utiliza el archivo package.json para almacenar los datos relevantes a nuestra aplicación. Este archivo corresponde a una estructura JSON que incluye metadatos importantes para la descripción del módulo, la cual es utilizada en procesos tales como la instalación y publicación de los módulos (nombre, versión, autor, dependencias, etc.).
+NPM utiliza el archivo package.json para almacenar los datos relevantes a nuestra aplicación. Este archivo corresponde a una estructura JSON, que incluye metadatos importantes para la descripción del módulo, la cual es utilizada en procesos tales como la instalación y publicación de los módulos (nombre, versión, autor, dependencias, etc.).
 
 
 \subsection{Express}
@@ -407,22 +386,23 @@ Express~\cite{express} es el framework más popular de Nodejs y muchos otros fram
 \item Amplia las funcionalidades del módulo HTTP que vienen por defecto con Node.
 \item Permite a los usuarios configurar rutas para enviar y recibir solicitudes entre el front-end y la base de datos.
 \item Viene con un sistema de visualización que admite más de 14 motores de plantillas.
-\item Permite establecer ajustes de aplicaciones web como que puerto usar, la localización de las plantillas que se utilizan, etc.
+\item Permite establecer ajustes de aplicaciones web como qué puerto usar, la localización de las plantillas que se utilizan, etc.
 \item Proporciona un generador de aplicaciones que crea el esqueleto de una aplicación.
 \end{itemize}
 
 
 \subsection{Promise-Mysql}
 \label{subsec:promise-mysql}
-El módulo Promise-Mysql sirve para conectar Nodejs con Mysql, dando soporte para la utilización de promesas de Javascript.\\
-Se trata de un contenedor del controlador mysqljs/mysql de Node, que envuelve las llamadas con promesas Bluebird. Es decir que mientras el controlador mysqljs/mysql utiliza callbacks, promise-msqy soporta promesas.
+El módulo Promise-Mysql sirve para conectar Nodejs con Mysql, dando soporte para la utilización de promesas de JavaScript.\\
+Se trata de un contenedor del controlador mysqljs/mysql de Node, que envuelve las llamadas con promesas Bluebird. Es decir, mientras el controlador mysqljs/mysql utiliza callbacks, promise-msqy soporta promesas.
 
 
 \subsection{Jsonwebtoken}
 \label{subsec:jsonwebtoken}
 Jsonwebtoken  es una librería que permite generar y verificar Json web tokens con Node.js.
 
-Json web token(jwt) \cite{jsonwebtoken} : es un estándar abierto para crear tokens. Un token se utiliza para validar el acceso de un usuario a un servidor, ser trata de una cadena alfanumérica que se obtiene al encriptar con una clave unos determinados datos que identifiquen al usuario.
+\textbf{Json web token(jwt)}
+Jwt~\cite{jsonwebtoken} : es un estándar abierto para crear tokens. Un token se utiliza para validar el acceso de un usuario a un servidor, se trata de una cadena alfanumérica que se obtiene al encriptar con una clave unos determinados datos que identifiquen al usuario.
  
 Los jwt están compuestos por 3 partes separadas por puntos: header.payload.signature
 
@@ -432,7 +412,7 @@ Los jwt están compuestos por 3 partes separadas por puntos: header.payload.signa
     CJpYXQiOjE0MjI3Nzk2Mzh9.gzSraSYS8EXBxLNoWnFSRgCzcmJmMjLiuyu5CSpyHI
 \end{verbatim}
 }
-\textbf{Header:} La cabecera, contiene el algoritmo de encriptación (alg, comúnmente es el algoritmo HMAC SHA256) y el tipo de token (typ).
+Header: La cabecera, contiene el algoritmo de encriptación (alg, comúnmente es el algoritmo HMAC SHA256) y el tipo de token (typ).
 {\footnotesize
 \begin{verbatim}
     {
@@ -441,14 +421,18 @@ Los jwt están compuestos por 3 partes separadas por puntos: header.payload.signa
     }
 \end{verbatim}
 }    
-\textbf{Payload:} Contiene atributos que definen nuestro token. Algunos de los atributos estándar de un token son:
-iat, indica cuando fue creado; jti, se trata de un identificador único para cada token; exp, indica el tiempo de expiración del token y se utiliza una fecha para validar si el token ha expirado y obligar al usuario o volver a autenticarse.
+Payload: Contiene atributos que definen nuestro token. Algunos de los atributos estándar de un token son:
+\begin{itemize}
+        \item Iat: indica cuando fue creado.
+        \item Jti: se trata de un identificador único para cada token.
+        \item Exp: indica el tiempo de expiración del token y se utiliza una fecha para validar si el token ha expirado y obligar al usuario o volver a autenticarse.
+\end{itemize}
 
-\textbf{Signature:} La firma se genera utilizando las dos primeras partes, la cabecera y el contenido, en base64 y una clave secreta, key, que se utiliza para la encriptación.
+Signature: La firma se genera utilizando las dos primeras partes, la cabecera y el contenido, en base64, y una clave secreta, key, que se utiliza para la encriptación.
        
 {\footnotesize
 \begin{verbatim}
-     signature = HMAC-SHA256(key, base64Encode(header) + '.' 
+     signature = HMAC-SHA256(key, base64Encode(header) + '.'
           + base64Encode(payload))
 \end{verbatim}
 }
@@ -457,8 +441,8 @@ iat, indica cuando fue creado; jti, se trata de un identificador único para cada
 \section{HTML5}
 \label{sec:html}
 HTML \cite{HTML:w3} \cite{HTML:whatwg} (HyperText Markup Language) es un lenguaje de marcado que se utiliza para describir la estructura de las páginas web. HTML5 es la quinta versión de este lenguaje. A lo largo de todas las versiones se han incorporado y eliminado diferentes características, con el fin de hacerlo más eficiente y facilitar el desarrollo web compatibles con distintos navegadores y plataformas, y manteniéndose también compatible con las versiones anteriores.\Newline
-A pesar de ser un estándar a cargo del Consorcio WWW, fue la asociación WHATWG, formada por Apple, Opera y Mocilla; la que publico el primer borrador de HTML5 cuando W3C decidió dejar de evolucionar HTML. Más tarde W3C y WHATWG trabajaron juntos durante varios años en el desarrollo de HTML5, hasta que se separaron debido a sus diferentes objetivos, W3C quería publicar una versión terminada mientras que WHATWG quería seguir trabajando, manteniendo HTML5 en constante evolución.\\
-Algunas de las principales características de HTML5 son: 
+A pesar de ser un estándar a cargo del Consorcio WWW, fue la asociación WHATWG, formada por Apple, Opera y Mozilla; la que publico el primer borrador de HTML5 cuando W3C decidió dejar de evolucionar HTML. Más tarde W3C y WHATWG trabajaron juntos durante varios años en el desarrollo de HTML5, hasta que se separaron debido a sus diferentes objetivos, W3C quería publicar una versión terminada mientras que WHATWG quería seguir trabajando, manteniendo HTML5 en constante evolución.\\
+Algunas de las principales características de HTML5 son:
 \begin{itemize}
 \item Incorpora nuevas etiquetas que especifican la semántica del contenido, ayudando a interpretar mejor la página. Donde antes teníamos \textless{}div\textgreater{} para definir cualquier sección, ahora podemos utilizar \textless{}header\textgreater{}, \textless{}nav\textgreater{}, \textless{}section\textgreater{}, \textless{}footer\textgreater{}, entre otros.
 
@@ -477,14 +461,14 @@ Algunas de las principales características de HTML5 son:
 \section{CSS3}
 \label{sec:css}
 CSS \cite{CSS3} son las siglas de Cascading Style Sheets, es un lenguaje de diseño web utilizado para definir el aspecto visual de una página. Indica cómo tienen que aparecer los elementos en el navegador en cuanto a colores, tamaños de las fuentes, tamaños de elemento, tipo de letra, fondos de página, etc.
-Con CSS se consigue separa el contenido y el formato, dentro del mismo documento o separándolo en una hoja de estilo. Esto permite reutilizar una misma hoja de estilo en diferentes documentos y modificar por completo la estética de la página sin tener que modificar el contenido.
+Con CSS se consigue separar el contenido y el formato, dentro del mismo documento o separándolo en una hoja de estilo. Esto permite reutilizar una misma hoja de estilo en diferentes documentos y modificar por completo la estética de la página sin tener que modificar el contenido.
 
 CSS3 es la última versión de este lenguaje, y proporciona nuevas características como bordes redondeados, sombras, gradientes, texto multi-columna, cajas flexibles, transiciones o animaciones, etc.
 
 
 \section{Bootstrap}
 \label{sec:bootstrap}
-Bootstrap \cite{bootstrap} es un popular framework de desarrollo front-end. Facilita el diseño de páginas web y ofrece herramientas para crear de manera sencilla sitios y aplicaciones web con un diseño responsive, es decir que, la interfaz se adapta de manera automática a cualquier dispositivo, tamaño y resolución de pantalla. Para ello utiliza un sistema de rejilla, compuesto por 12 columnas.\\
+Bootstrap \cite{bootstrap} es un popular framework de desarrollo front-end. Facilita el diseño de páginas web y ofrece herramientas para crear de manera sencilla sitios y aplicaciones web con un diseño responsive, es decir, la interfaz se adapta de manera automática a cualquier dispositivo, tamaño y resolución de pantalla. Para ello utiliza un sistema de rejilla, compuesto por 12 columnas.\\
 Pone también a nuestra disposición elementos con estilos predefinidos fáciles de configurar como formularios, botones, cuadros, menús de navegación.
 
 Bootstrap es modular y consiste en una serie de hojas de estilo LESS (un lenguaje de pre-proceso de CSS) combinado con JavaScript.\\
@@ -494,11 +478,11 @@ Originariamente se le conocía como Twitter Blueprint. Fue creado en 2010, para u
 \section{Bcryptjs}
 \label{sec:bcryptjs}
 Bcryptjs es una librería de encriptación escrita en JavaScript por Niels Provos y David Maxieres.
-Bcript genera un hash combinando la información que se desea encriptar con un valor llamado Salt, que son bytes aleatoriamente generados. De este modo al encriptar dos veces el mismo valor nunca generará el mismo hash.
+Genera un hash combinando la información que se desea encriptar con un valor llamado Salt, que son bytes aleatoriamente generados. De este modo al encriptar dos veces el mismo valor nunca generará el mismo hash.
 Esto evita los ataques Rainbow table y los ataques por fuerza bruta cuando se utiliza por ejemplo para guardar contraseñas en bases de datos.\\
-Bcrypy permite elegir el valor de saltRound, utilizado para calcular el campo Salt. Cuanto mayor sea este número más segura será la encriptación, pero mayor será el coste de procesamiento de los datos y más tiempo tarda en encriptar. Es decir, que tenemos la seguridad frente a ataques contra la espera del usuario. Por defecto, el valor de saltRound 10.
+Bcryptjs permite elegir el valor de saltRound, utilizado para calcular el campo Salt. Cuanto mayor sea este número más segura será la encriptación, pero mayor será el coste de procesamiento de los datos y más tiempo tarda en encriptar. Es decir, tenemos la seguridad frente a ataques contra la espera del usuario. Por defecto, el valor de saltRound es 10.
 
-Ofrece también herramientas para comparar un valor con otro encriptado. Para realizar la comparación, en vez de desencriptar el campo encriptado, como hacen otros sistemas, Bcrypy encripta el valor utilizando el valor Salt que va incorporado en el hash.
+Ofrece también herramientas para comparar un valor con otro encriptado. Para realizar la comparación, en vez de desencriptar el campo encriptado, como hacen otros sistemas, Bcryptjs encripta el valor utilizando el valor Salt que va incorporado en el hash.
 
 
 \section{Momentjs}
@@ -531,7 +515,7 @@ Una forma de utilizar CORS en un servidor de Express es mediante el módulo cors 
 El proyecto consta de un cliente y un servidor independientes que interactúan entre ellos. El cliente está desarrollado utilizando Angular 7. Está escrito en TypeScript y se utiliza además HTML, CSS3 y Bootstrap para la visualización de las vistas. Por otro lado, para el servidor se ha utilizado Nodejs pero está igualmente programado en TypeScript. La aplicación requiere además de una base de datos, para la que se ha utilizado Mysql.
 
 Para que el cliente y el servidor puedan comunicarse, es decir, para que el cliente pueda acceder a los recursos ofrecidos por el servidor es necesario la utilización de CORS, ya que se encuentran en dominios diferentes y, como hemos explicado antes, esto no está permitido por motivos de seguridad.\\
-En la siguiente figura podemos ver la arquitectura de la aplicación~\ref{fig:arquitectura}.
+En la figura~\ref{fig:arquitectura} podemos ver la arquitectura de la aplicación.
 
 \begin{figure}
   \centering
@@ -540,7 +524,7 @@ En la siguiente figura podemos ver la arquitectura de la aplicación~\ref{fig:arq
   \label{fig:arquitectura}
 \end{figure}
 
-Cuando un usuario interactúe con la aplicación cliente a través de un navegador, esta hará peticiones HTTTP solicitando determinados recursos al servidor. El servidor accederá a la base de datos y respondera con un Json, que el cliente tratará y mostrará. Por ejemplo, cuando un usuario acceda a la URL /buildings, el cliente tendrá que mostrar los edificios de ese usuario, de modo que hará una petición GET a la ruta /api/buildings y el servidor enviará un Json con el modelo de datos de los edificios.
+Cuando un usuario interactúe con la aplicación cliente a través de un navegador, esta hará peticiones HTTTP solicitando determinados recursos al servidor. El servidor accederá a la base de datos y responderá con un Json, que el cliente tratará y mostrará. Por ejemplo, cuando un usuario acceda a la URL /buildings, el cliente tendrá que mostrar los edificios de ese usuario, de modo que hará una petición GET a la ruta /api/buildings y el servidor enviará un Json con el modelo de datos de los edificios.
 
 
 \section{Diseño e implementación del servidor}
@@ -548,7 +532,7 @@ Cuando un usuario interactúe con la aplicación cliente a través de un navegador,
 
 Se ha creado un API REST para ofrecer los datos del juego. El servidor ofrece una serie de recursos, que veremos más adelante, y se encarga de los accesos a la base de datos, en función de las peticiones que reciba del cliente.
 
-El servidor, realizado con Nodejs, gestiona eventos de manera asíncrona, como hemos explicado. 
+El servidor, realizado con Nodejs, gestiona eventos de manera asíncrona, como hemos explicado.
 Existen diferentes modelos de programación asíncrona. El modelo más común es la utilización de callbacks, es decir, cada operación asíncrona recibe una función que incluye lo que debe hacer a continuación. Pero este método dificulta la comprensión del código.
 
 El método elegido para realizar esta programación asíncrona ha sido el uso de promesas junto con los operadores async y await. De este modo el esquema de desarrollo se parece algo más al estilo secuencial pero manteniendo su carácter no bloqueante.\\
@@ -574,7 +558,7 @@ De este modo cada acceso a la base de datos y la comunicación con el cliente se 
   \label{fig:baseDatos}
 \end{figure}
 
-La aplicación requiere de una base de datos. Parte de las tablas están rellenas inicialmente con los datos del juego. 
+La aplicación requiere de una base de datos. Parte de las tablas están rellenas inicialmente con los datos del juego.
 
 La aplicación es multilenguaje, Español e Inglés, de modo que, la información almacenada que deba ser traducida estará almacenada en los dos idiomas. El resto de las tablas, pertenecientes a los datos de los usuarios se irán rellenando al crearse nuevos usuarios.
 
@@ -603,9 +587,9 @@ La tabla \textit{languages} almacena los diferentes idiomas en los que es posibl
 \end{figure}
 
 En la figura~\ref{fig:tablasEdificios} se muestran las tablas correspondientes a la información de los edificios.
-Cada edificio existente está guardado en la tabla \textit{buildings} y es identificado con el campo \textit{id\_building}, que es clave foránea de las otras dos tablas. 
+Cada edificio existente está guardado en la tabla \textit{buildings} y es identificado con el campo \textit{id\_building}, que es clave foránea de las otras dos tablas.
 
-La información que debe ser traducida de un edificio está almacenada en la tabla \textit{buildings\_land}. Cada edificio, con un mismo id\_building, es almacenado en los idiomas existentes en la tabla \textit{languages}, de la cual es clave foránea el campo id\_languages. 
+La información que debe ser traducida de un edificio está almacenada en la tabla \textit{buildings\_land}. Cada edificio, con un mismo id\_building, es almacenado en los idiomas existentes en la tabla \textit{languages}, de la cual es clave foránea el campo id\_languages.
 
 Los edificios tiene diferentes niveles y cada uno de estos niveles está especificado en la tabla \textit{buildings\_levels}: se detallan los recursos y el tiempo necesarios para mejorar el edificio, las mejoras que se producen al subir de nivel el edificio (field\_toIncrease1 y field\_toIncrease2), etc.
 
@@ -632,7 +616,7 @@ En la tabla \textit{troops} tenemos las tropas identificadas con el campo id\_tr
 
 
 En la figura~\ref{fig:tablasInvestigaciones} se muestran las tablas correspondientes a la información de las investigaciones.\\
-Cada investigación que se puede realizar está guardada en la tabla \textit{research} y se identifica mediante el campo id\_res (clave primaria). Se indica también el nivel máximo que puede alcanzar una investigación y qué es lo se consigue al mejorar su nivel. 
+Cada investigación que se puede realizar está guardada en la tabla \textit{research} y se identifica mediante el campo id\_res (clave primaria). Se indica también el nivel máximo que puede alcanzar una investigación y qué es lo se consigue al mejorar su nivel.
 
 La información que debe ser traducida de la tabla \textit{research} está almacenada en la tabla \textit{research\_land} y nuevamente vemos como hace referencia a ella y a la tabla \textit{languages}.
 
@@ -670,7 +654,7 @@ El servidor está estructurado, de manera sencilla, como se muestra en la imagen~
   \label{fig:esquemaServidor}
 \end{figure}
 
-El archivo de Node llamado \textbf{package.json} contiene principalmente el nombre, la descripción, una sección de dependencias donde aparecen los módulos que he utilizado, y que he descrito en el capítulo~\ref{chap:arte}, y una sección de scripts donde podemos crear nuestros propios comandos. 
+El archivo de Node llamado \textbf{package.json} contiene principalmente el nombre, la descripción, una sección de dependencias donde aparecen los módulos que he utilizado, y que he descrito en el capítulo~\ref{chap:arte}, y una sección de scripts donde podemos crear nuestros propios comandos.
 
 \vspace{0.4cm}
 El archivo \textbf{tsconfig.json} es el archivo de configuración de TypeScript.
@@ -752,14 +736,14 @@ Para validar el token se extrae de la cabecera textit{Authorization} de la petic
 Operaciones y recursos disponibles de la API:
 
 \begin{itemize}
-  \item  \textbf{ post api/user/login :} comprueba que el nombre de usuario y la contraseña recibidos se corresponden con los almacenados accediendo a la tabla \textit{users}. Si es así genera un token y lo envía al cliente. 
+  \item  \textbf{ post api/user/login :} comprueba que el nombre de usuario y la contraseña recibidos se corresponden con los almacenados accediendo a la tabla \textit{users}. Si es así genera un token y lo envía al cliente.
   En caso de que el usuario no exista o la contraseña sea incorrecta devuelve un error HTTP 401.
   \item \textbf{ post api/user/register :} encripta la contraseña e inserta un registro en la tabla \textit{users} junto con el resto de datos introducidos por el usuario. Crea también un registro en las tablas \textit{user\_buildings}, \textit{user\_troops}, \textit{user\_research} y \textit{profile}, con los datos iniciales de la nueva partida.
   \item \textbf{ get api/user/ :} realiza una select de la tabla \textit{users} y devuelve el nombre y el idioma del usuario.
   \item \textbf{ put api/user/ :} modifica el idioma de un usuario: actualiza el campo id\_language de la \textit{users} del usuario que realiza la petición.
   \item \textbf{ get api/language/ :} devuelve los idiomas disponibles, es decir, realiza una select de la tabla \textit{languages} y devuelve el contenido.
   \item \textbf{ get api/profile/ :} devuelve el perfil del jugador.
-  \item \textbf{ get api/profile/enemyList :} recupera una lista de 30 usuarios de la tabla \textit{profile} (partidas de usuarios). Para hacer la select de esa lista primero se generan identificadores de usuarios que necesitará para la busqueda, de la siguiente manera: Se recuperan de la tabla reports los usuarios que han atacado al jugador que realiza la petición, si el número total de estos usuarios es inferior a 30, se complementa la lista con identificadores de usuario generados aleatoriamente entre el total de usuarios. 
+  \item \textbf{ get api/profile/enemyList :} recupera una lista de 30 usuarios de la tabla \textit{profile} (partidas de usuarios). Para hacer la select de esa lista primero se generan identificadores de usuarios que necesitará para la busqueda, de la siguiente manera: Se recuperan de la tabla reports los usuarios que han atacado al jugador que realiza la petición, si el número total de estos usuarios es inferior a 30, se complementa la lista con identificadores de usuario generados aleatoriamente entre el total de usuarios.
   \item \textbf{ put api/profile/:idUser :} actualiza la partida del jugador con el identificador idUser, la tabla \textit{profile}.
   \item \textbf{ get api/research/ :} recupera los datos relacionados de las tablas \textit{user\_research}, \textit{research}, \textit{research\_lang} y \textit{research\_levels}, es decir la información del jugador en cuanto a investigaciones, y la devuelve.
   \item \textbf{ get api/research/timeToEnd :} devuelve el tiempo restante para que finalice la investigación que haya en curso.
@@ -768,7 +752,7 @@ Operaciones y recursos disponibles de la API:
   \item \textbf{ get api/buildings/timeToEnd :} recupera el tiempo restante para que finalice el edificio que haya en construcción.
   \item \textbf{ get api/buildings/:idBuil :} devuelve la información de un edificio concreto, idBuild, relativa al jugador.
   \item \textbf{ put api/buildings/:idBuil :} actualiza la tabla \textit{user\_buildings} para el edificio con el identificador indicado, idBuil.
-  \item \textbf{ get api/troops/ :} devuelve la información de las tropas (\textit{troops} y \textit{troops\_lang}). 
+  \item \textbf{ get api/troops/ :} devuelve la información de las tropas (\textit{troops} y \textit{troops\_lang}).
   \item \textbf{ get api/troops/user/timeToEnd :} devuelve el tiempo restante para que finalicen las tropas que haya creandose.
   \item \textbf{ get api/troops/user/all :} devuelve la información de las tropas relacionadas con el jugador que realiza la petición. Es decir, los datos relacionados de las tablas \textit{user\_troops}, \textit{troops}, \textit{troops\_lang}, \textit{troops\_type} y \textit{troops\_type\_lang}.
   \item \textbf{ get api/troops/user/:idUser :} devuelve la información de las tropas relacionadas con el jugador con el identificador idUser, de las tablas \textit{user\_troops}, \textit{troops}y \textit{troops\_lang}.
@@ -787,23 +771,23 @@ Todas las respuestas generadas tienen formato JSON.
 \label{sec:cliente}
 
 El cliente es el encargado de interactuar con los usuarios a través de un navegador web. Tal y como he explicado anteriormente, la parte del cliente está desarrollada utilizando Angular 7. Angular proporciona un servidor en el puerto 4200, que es el encargado de atender a las peticiones del usuario. \\
-Al tratarse de una aplicación SPA no se recarga la página en ningún momento. La carga de datos es completamente asíncrona con el servidor y ademas este tipo de web son completamente dinámicas, es decir, que el cambio entre las diferentes urls de la web es completamente instantáneo, dinámico y reactivo. 
+Al tratarse de una aplicación SPA no se recarga la página en ningún momento. La carga de datos es completamente asíncrona con el servidor y ademas este tipo de web son completamente dinámicas, es decir, el cambio entre las diferentes urls de la web es completamente instantáneo, dinámico y reactivo.
 
 \vspace{0.5cm}
-Angular se compone de componentes, servicios, módulos y directivas. La estuctura general del cliente es la siguiente:
+Angular se compone de componentes, servicios, módulos y directivas. La estructura general del cliente es la siguiente:
 
 \begin{itemize}
- \item \textbf{index.html} es la página html inicial del proyecto, aquí tenemos la cabecera de HTML con el cuerpo que llama directamente al componente raíz app.component.
+ \item \textbf{index.html} es la página HTML inicial del proyecto, aquí tenemos la cabecera de HTML con el cuerpo que llama directamente al componente raíz app.component.
  \item \textbf{main.ts} es el archivo TypeScript inicial, en el se establecen los módulos necesarios, en nuestro caso app.module.ts.
 
  \item\textbf{styles.css} en el se establecen los estilos globales de la aplicación.
 
  \item \textbf{app.module.ts} es el módulo principal de mi proyecto, en él se declaran los componentes, los proveedores y los módulos que se utilizan.
 
- \item\textbf{app.component.ts} es el componente raíz y su plantilla \textbf{app.component.html} divide la página de manera que la parte de arriba muestra siempre una vista controlada por el componente navigation y el resto de la página varía. Esta parte que varía es controlada por un Controlador diferente según la ruta. Estas rutas están especificadas en la clase \textbf{app-routing.module.ts}. 
+ \item\textbf{app.component.ts} es el componente raíz y su plantilla \textbf{app.component.html} divide la página de manera que la parte de arriba muestra siempre una vista controlada por el componente navigation y el resto de la página varía. Esta parte que varía es controlada por un Controlador diferente según la ruta. Estas rutas están especificadas en la clase \textbf{app-routing.module.ts}.
 
  \item Dentro de la carpeta \textbf{components} tenemos cada uno de los componentes (como es el caso de login.component.ts) con las plantillas que controlan (login.component.html) y los estilos de esa plantilla (login.component.css).
- Los componentes building, research y troops, son hijos de los componentes buildings-list, research-list y troops-list respectivamente. Es decir que estos componentes están completamente relacionados y se comunican la información constantemente entre ellos.
+ Los componentes building, research y troops, son hijos de los componentes buildings-list, research-list y troops-list respectivamente. Es decir, estos componentes están completamente relacionados y se comunican la información constantemente entre ellos.
 
  \item Dentro de \textbf{services} tenemos todos los servicios utilizados, que pueden ser llamados desde cualquier componente. Estos servicios hacen peticiones al servidor para obtener o modificar datos de la base de datos.
 
@@ -811,7 +795,7 @@ Angular se compone de componentes, servicios, módulos y directivas. La estuctura
 
  \item Las clases \textbf{interceptor.ts} e \textbf{interceptorError.ts} interceptan las peticiones entre el cliente y el servidor. Interceptor.ts añade el token de autorización en las cabeceras de las peticiones al servidor y interceptorError borra el token del LocalStorage del navegador (cierra la sesión del usuario) y muestra la vista de login, caso de que el cliente reciba un error de autenticación.
 
- \item Al igual que en el servidor tenemos una carpeta llamada \textbf{node\_modules} que contiene todas las dependencias instaladas y un archivo llamado \textbf{package.json} que contiene la descripción de esas dependencias. Esto es así ya que Angular también utiliza node para poder ejecutar el servidor y para poder convertir los archivos de TypeScript. En el archivo \textbf{tsconfig.json} tenemos la configuración para la compilación de archivos de TypeScript.
+ \item Al igual que en el servidor tenemos una carpeta llamada \textbf{node\_modules} que contiene todas las dependencias instaladas y un archivo llamado \textbf{package.json} que contiene la descripción de esas dependencias. Esto es así ya que Angular también utiliza Node para poder ejecutar el servidor y para poder convertir los archivos de TypeScript. En el archivo \textbf{tsconfig.json} tenemos la configuración para la compilación de archivos de TypeScript.
 \end{itemize}
 
 
@@ -864,7 +848,7 @@ Incluir un nuevo idioma sería sencillo, no habría que modificar código. Solo hab
 \subsection{Vistas de las páginas}
 \label{subsec:cliente.vistas}
 
-A continuación se describen las páginas que componen la aplicación. Para utilizar la aplicación es necesario estar registrado, de modo que, si no se ha iniciado sesión solo se podrá acceder a la página de Login/Registro. 
+A continuación se describen las páginas que componen la aplicación. Para utilizar la aplicación es necesario estar registrado, de modo que, si no se ha iniciado sesión solo se podrá acceder a la página de Login/Registro.
 Para mejorar la visualización de las páginas he utilizado Bootstrap y CSS3. Con Bootstrap se consigue además una correcta visualización para diferentes tamaños de pantalla y dispositivos.
 
 \vspace{1cm}
@@ -875,7 +859,7 @@ Para mejorar la visualización de las páginas he utilizado Bootstrap y CSS3. Con 
 
 La aplicación parte de una página de login/registro. Se muestra un formulario para iniciar sesión o registrarse. Mediante un botón en la parte de abajo del formulario se puede elegir entre una opción u otra.
 
-Se ha utilizado un formulario reactivo, sin enlace con los datos, que deja la lógica del formulario del lado del controlador. De este modo en el controlador se declara el formulario como objeto para tener control sobre su valor y su estado. A cada uno de los elementos del formulario se les asignan valores y métodos de validación, y se asocian al formulario. Estos métodos de validación comprueban si son campos obligatorios, si la longitud es correcta, si el formato del email es correcto. 
+Se ha utilizado un formulario reactivo, sin enlace con los datos, que deja la lógica del formulario del lado del controlador. De este modo en el controlador se declara el formulario como objeto para tener control sobre su valor y su estado. A cada uno de los elementos del formulario se les asignan valores y métodos de validación, y se asocian al formulario. Estos métodos de validación comprueban si son campos obligatorios, si la longitud es correcta, si el formato del email es correcto.
 
 La parte de arriba de todas las páginas está controlada por el componente navigation, en este caso solamente se muestra una barra superior con el titulo de la aplicación, ya que el usuario no ha iniciado sesión aún.
 
@@ -911,7 +895,7 @@ En la tercera pestaña se muestran las estadísticas y mejoras relacionadas con la
 \end{figure}
 
 
-\textbf{Página de edificios} 
+\textbf{Página de edificios}
 
 \vspace{0.4cm}
 
@@ -985,11 +969,11 @@ Solo es posible poner una investigación en marcha a la vez y aparece en la parte
 La quinta opción del menú, Ataques, redirige a la ruta /war.
 Desde aquí podemos atacar a otros jugadores.
 
-En el lado izquierdo aparece una lista con 30 jugadores rellena con jugadores que te hayan atacado en algún momento y el resto jugadores aleatoriamente generados.
+En el lado izquierdo aparece una lista con 30 jugadores rellena con jugadores que te hayan atacado en algún momento y el resto jugadores  generados de manera aleatoria.
 
 Para atacar simplemente hay que seleccionar a que jugador de la lista queremos atacar y las tropas con las que queremos hacerlo.
 
-Al finalizar la batalla se muestra un informe mediante una modal de Bootstrap con el resultado del combate. En ella aparecen dos tablas, una para cada participante, con las tropas iniciales, las tropas muertas, los heridos durante la batalla y los supervivientes. Y en el caso de que el atacante salga victorioso del combate se muestra una tercera tabla más con los recursos robados al defensor, en el caso de que el defensor tuviera recursos y el atacante capacidad de carga para llevarselos. Esto se detallara más adelante, junto con el sistema de batalla utilizado.
+Al finalizar la batalla se muestra un informe mediante una modal de Bootstrap con el resultado del combate. En ella aparecen dos tablas, una para cada participante, con las tropas iniciales, las tropas muertas, los heridos durante la batalla y los supervivientes. Y en el caso de que el atacante salga victorioso del combate se muestra una tercera tabla más con los recursos robados al defensor, en el caso de que el defensor tuviera recursos y el atacante capacidad de carga para llevárselos. Esto se detallara más adelante, junto con el sistema de batalla utilizado.
 
 \begin{figure}[H]
   \centering
@@ -1012,8 +996,8 @@ Al finalizar la batalla se muestra un informe mediante una modal de Bootstrap co
 \vspace{0.4cm}
 
 La sexta y ultima opción del menú, Informes, redirige a la ruta /reports, controlada por el componente reports.
-Aquí se muestra una tabla con los informes de las batallas realizadas, tanto si hemos sido atacantes como defensores. 
-La lista muestra a ambos jugadores y el rol de cada uno, el resultado de la batalla y la hora y día a la que fue realizado el ataque. 
+Aquí se muestra una tabla con los informes de las batallas realizadas, tanto si hemos sido atacantes como defensores.
+La lista muestra a ambos jugadores y el rol de cada uno, el resultado de la batalla y la hora y día a la que fue realizado el ataque.
 
 Al pinchar sobre una de las filas tabla se nos abre un informe igual que el mostrado tras realizar un ataque: con tablas de tropas una para cada jugador, y los recursos si el atacante sale victorioso. Es decir, en este caso, como no somos siempre el atacante, puede salir una tabla con los recursos perdidos, no solo ganados.
 
@@ -1050,11 +1034,11 @@ Este reparto de tropas puede realizarse ya que en la formula de cálculo del daño
 
 {\footnotesize
 \begin{verbatim}
-Daño a la vida = 10 * e^(0,03 * Diferencia de fuerza) 
-    * (Precisión de la tropa) * (aleatorio entre 80% y 120%) 
+Daño a la vida = 10 * e^(0,03 * Diferencia de fuerza)
+    * (Precisión de la tropa) * (aleatorio entre 80% y 120%)
     * (Modificador tipo tropa)
 
-Diferencia de fuerza = ataque total tropa atacante - 
+Diferencia de fuerza = ataque total tropa atacante -
     defensa total tropa defensora
 
 Ataque tropa atacante = ataque tropa * bonus investigaciones de ataque
@@ -1118,11 +1102,11 @@ En el caso de que el jugador atacante salga victorioso se realiza el cálculo de 
 \textbf{Cálculo de recursos ganados}
 
 \vspace{0.4cm}
-Para realizar el cálculo se tiene en cuenta dos cosas, la cantidad de recursos que puede perder el jugador defensor y la cantidad de recursos que puede transportar el jugador atacante: 
+Para realizar el cálculo se tiene en cuenta dos cosas, la cantidad de recursos que puede perder el jugador defensor y la cantidad de recursos que puede transportar el jugador atacante:
 {\footnotesize
 \begin{verbatim}
-  Los recursos que puede perder el defensor = La cantidad de recursos que 
-  tiene el defensor - la cantidad de recursos protegidos por el edificio 
+  Los recursos que puede perder el defensor = La cantidad de recursos que
+  tiene el defensor - la cantidad de recursos protegidos por el edificio
   Almacén
 \end{verbatim}
 }
@@ -1130,13 +1114,13 @@ Esto se realiza para cada tipo de recurso. A mayor nivel del edificio en cuestió
 Por otro lado, se calcula:
 {\footnotesize
 \begin{verbatim}
-  El número de recursos que puede transportar el atacante = número de 
+  El número de recursos que puede transportar el atacante = número de
   tropas sanas (sin heridos) * la capacidad de carga de los diferentes
   tipos de tropas.
 \end{verbatim}
 }
 
-Si la capacidad de carga del atacante es mayor que los recursos que puede perder el defensor se llevará todos ellos, en caso contrario, se llevará de cada tipo de recurso una cantidad realizada de manera proporcional a la cantidad de ese recurso que hay disponible y de manera que la suma de los tres tipos iguale el máximo de su capacidad de carga. Es decir que por ejemplo:
+Si la capacidad de carga del atacante es mayor que los recursos que puede perder el defensor se llevará todos ellos, en caso contrario, se llevará de cada tipo de recurso una cantidad realizada de manera proporcional a la cantidad de ese recurso que hay disponible y de manera que la suma de los tres tipos iguale el máximo de su capacidad de carga. Es decir, por ejemplo:
 {\footnotesize
 \begin{verbatim}
 Si el defensor dispone de:
@@ -1176,7 +1160,7 @@ Y la capacidad máxima de carga es 100000 la cantidad robada será:
 En la realización de este proyecto he podido poner en práctica mis conocimientos adquiridos durante el grado sobre todo en cuestiones de bases de datos relacionales, HTML, CSS3 y JavaScript.
 Las demás asignaturas relacionadas con la programación me han sido útiles de igual modo, ya que aún tratándose de lenguajes o tecnologías diferentes, aportan conocimientos sobre el funcionamiento y la forma de desarrollar una aplicación.
 
-La asignatura más relacionada en cuanto a tecnologías es Desarrollo de aplicaciones telemáticas. Es en esta asignatura donde adquirí mis principales conocimientos sobre Javascript, HTML5, CSS3 y distintas APIs de Google.
+La asignatura más relacionada en cuanto a tecnologías es Desarrollo de aplicaciones telemáticas. Es en esta asignatura donde adquirí mis principales conocimientos sobre JavaScript, HTML5, CSS3 y distintas APIs de Google.
 
 En Ingeniería de sistemas de información aprendí a construir una aplicación completa usando herramientas para el desarrollo en equipo. Y adquirí mis conocimientos sobre bases de datos.
 
@@ -1186,17 +1170,19 @@ Otras asignaturas relacionadas son también Arquitectura de redes de ordenadores,
 \section{Lecciones aprendidas}
 \label{sec:lecciones_aprendidas}
 
-Ha supuesto un reto enfrentarse a un proyecto de esta envergadura y más aún tratándose, en su mayoría, de tecnologías que desconocía y que nunca había utilizado, como son Angular, junto con el lenguaje TypeScript, Nodejs y Bootstrap. 
+Ha supuesto un reto enfrentarse a un proyecto de esta envergadura y más aún tratándose, en su mayoría, de tecnologías que desconocía y que nunca había utilizado, como son Angular, junto con el lenguaje TypeScript, Nodejs y Bootstrap.
 
 He podido aprender mucho sobre el desarrollo de aplicaciones escalables y de programación asíncrona, sin bloqueos, que me ha proporcionado también muchos quebraderos de cabeza.
 
-A pesar de estar basado en Javascript y ser similar, Typescript junto con Angular suponen una manera totalmente diferente de programar de lo que conocía hasta ahora con Javascript. También puedo decir que Angular facilita el mantenimiento y desarrollo de una aplicación de gran envergadura. 
+A pesar de estar basado en JavaScript y ser similar, TypeScript junto con Angular suponen una manera totalmente diferente de programar de lo que conocía hasta ahora con JavaScript. También puedo decir que Angular facilita el mantenimiento y desarrollo de una aplicación de gran envergadura.
 
-Por otro lado, con Bootstrap he aprendido nuevas formas de mejorar el aspecto visual de las aplicaciones web y de darles un diseño responsive de forma más sencilla. 
+Por otro lado, con Bootstrap he aprendido nuevas formas de mejorar el aspecto visual de las aplicaciones web y de darles un diseño responsive de forma más sencilla.
 
 También he afianzado mis conocimientos sobre bases de datos, cosa que he utilizado mucho para la realización del proyecto y que hasta ahora apenas las había empezado a usar.
 
 Para la realización de esta memoria he utilizado otra herramienta que desconocía, Latex, que ha resultado muy útil para conseguir una buena presentación de la memoria.
+
+Además de todo esto, durante el desarrollo utilicé una herramienta que desconocía, Postman, y que me ha ayudado a comprobar el funcionamiento de mi servidor mediante la generación de peticiones HTTP. También usé un middleware para Nodejs que sirve para poder ver en la consola del servidor las peticiones HTTP que este va recibiendo.
 
 
 \section{Trabajos futuros}
@@ -1204,7 +1190,7 @@ Para la realización de esta memoria he utilizado otra herramienta que desconocía
 
 Este aplicación es solo el comienzo de lo que podría llegar a ser este juego. A un software siempre se le pueden realizar mejoras o añadir nuevas funcionalidades, y como tal, este juego no se queda atrás.
 
-Para empezar, la parte más importante que se podría añadir a este juego sería una interfaz visual atractiva, que incluyera mapas e imágenes completas de ciudades, batallas que pudieran visualizarse, etc. 
+Para empezar, la parte más importante que se podría añadir a este juego sería una interfaz visual atractiva, que incluyera mapas e imágenes completas de ciudades, batallas que pudieran visualizarse, etc.
 Y en estos mapas no tendría por qué haber solo las ciudades de los jugadores, o limitarnos a movernos entre ellas, podría haber otros elementos como por ejemplo mares y barcos para poder cruzar, etc.
 
 También se podrían añadir opciones para permitir la iteración y colaboración con otros jugadores, como poder comunicarte con ellos, intercambios de materiales e incluso tropas, la realización de torneos o eventos para que los jugadores compitieran.
@@ -1246,4 +1232,4 @@ Como ya he dicho también el acceso de los jugadores no está limitado, cada jugad
 % http://texblog.org/2014/04/22/using-google-scholar-to-download-bibtex-citations/
 
 
-\end{document}
+\end{document} 
