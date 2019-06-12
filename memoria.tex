@@ -165,6 +165,12 @@ mi familia}
 %\addcontentsline{toc}{chapter}{Resumen} % si queremos que aparezca en el índice
 \markboth{RESUMEN}{RESUMEN} % encabezado
 
+Este proyecto tiene como objetivo la creación de un juego de estrategia militar multijugador, en tiempo real y multilenguaje. Este juego debe ser accesible, por los jugadores, desde cualquier tipo de dispositivo con un navegador.
+
+El diseño del juego está basado en el modelo cliente-servidor, de modo que ambos pueden estar alojados en la misma máquina, o en diferentes máquinas. Deberá soportar el acceso al mismo de múltiples jugadores al mismo tiempo.
+
+Para desarrollar el cliente se ha utilizado el framework de JavaScript, Angular, y está programado en TypeScript. Se han utilizado también HTML5, CSS3 y Bootstrap. Para el servidor se ha utilizado Nodejs y se ha desarrollado igualmente en TypeScript.
+
 
 
 % ¿De qué va este proyecto? ¿Cuál es su objetivo principal?
@@ -183,8 +189,11 @@ mi familia}
 %\addcontentsline{toc}{chapter}{Summary} % si queremos que aparezca en el índice
 \markboth{SUMMARY}{SUMMARY} % encabezado
 
+This project's aim is the development of a multiplayer military strategy game, in real time and multilanguage. This game must be accessible from any type of device with a browser.
 
+The design is based on the client-server model, so that both can be hosted on the same machine, or on different machines. You must support multiple player access at the same time.
 
+Angular, a JavaScript framework has been used to develop the client. And it has been programmed in TypeScript. HTML5, CSS3 and Bootstrap have also been used. Node has been used for the server and has also been developed in TypeScript.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -260,11 +269,30 @@ La memoria está estructurada de la siguiente manera:
 \section{Objetivo general} % título de sección (se muestra)
 \label{sec:objetivo-general} % identificador de sección (no se muestra, es para poder referenciarla)
 
+El objetivo de mi trabajo fin de grado consiste en desarrollar de un videojuego online de estrategia en tiempo real y multijugador al que se pueda acceder a través de un navegador. Y para ello utilizar distintas tecnologías de última generación que me permitan superar nuevos retos y mejorar mis habilidades, y destrezas técnicas.
 
 \section{Objetivos específicos}
 \label{sec:objetivos-especificos}
 
+Para alcanzar el objetivo principal se han seguido los siguientes objetivos específicos:
 
+\begin{itemize}
+
+\item Entretener a los jugadores de manera que disfruten dedicando tiempo al mismo, mientras viven una experiencia competitiva, a la vez que divertida.
+
+\item Funcionamiento del juego en tiempo real: se pretende conseguir que el tiempo transcurra de manera continuada, estén activos o no los jugadores.
+
+\item Realizar un sistema de batalla equilibrado basado en la diferencia de fuerzas de cada jugador, y que, además, para hacerlo menos previsible y más interesante, cuente con una serie de ventajas que al aplicarlas puedan influir en el resultado final.
+
+\item Proporcionar soporte en múltiples idiomas. La aplicación funcionará en Español e Inglés, teniendo la posibilidad de añadir nuevos idiomas.
+
+\item Desarrollar la aplicación de manera que se adapte a diferentes dispositivos o tamaños de pantalla.
+
+\item Sencillez de uso: se espera que el juego sea fácilmente entendible por cualquier posible usuario.
+
+\item Uso de tecnologías web avanzadas: JavaScript es uno de los lenguajes más populares de los últimos años. Y ha traído consigo numerosos frameworks, como Angular, el cual se pretende utilizar para el desarrollo junto con Nodejs.
+
+\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1143,6 +1171,18 @@ Y la capacidad máxima de carga es 100000 la cantidad robada será:
 \chapter{Resultados}
 \label{chap:resultados}
 
+El resultado final del proyecto es satisfactorio. El presente proyecto pretendía crear un juego juego de estrategia militar, cosa que se ha logrado.
+El juego tiene una interfaz sencilla y se adapta a los diferentes tamaños de pantallas, como se había dicho. 
+
+mostrar.....
+
+Se da la posibilidad de visualizar la aplicación tanto en Inglés como en Español. Además es posible añadir nuevos lenguajes simplemente añadiendo un fichero Json, como el explicado en el capítulo~\ref{chap:implementacion}, e iguales a los que ya hay, con los datos de las plantillas y añadiendo a la base de datos las traducciones de los edificios, investigaciones y demás características del juego.
+
+El juego funciona en tiempo real, como se pretendía. Las investigaciones, construcciones y creaciones de tropas siguen avanzando aún cuando el jugador no está activo, al igual que sus recursos aumentan y es posible que reciba ataques durante ese tiempo.
+
+
+El sistema de batallas  ......
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1212,6 +1252,26 @@ Como ya he dicho también el acceso de los jugadores no está limitado, cada jugad
 \chapter{Manual de usuario}
 \label{app:manual}
 
+En proceso .....
+
+-Instalacion de la ultima versión de node y npm
+sudo apt install curl
+curl -sL https://deb.nodesource.com/setup_11.x -o nodesource_setup.sh
+sudo bash nodesource_setup.sh
+sudo apt-get install nodejs
+
+-Angular Cli
+sudo npm install -g @angular/cli
+
+Instalar mysql
+
+
+Crear base de datos
+
+
+servidor express: npm run dev
+
+servidor angular: ng serve
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
