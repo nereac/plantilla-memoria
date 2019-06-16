@@ -193,7 +193,7 @@ This project's aim is the development of a multiplayer military strategy game, i
 
 The design is based on the client-server model, so that both can be hosted on the same machine, or on different machines. It must support multiple player access at the same time.
 
-Angular, a JavaScript framework has been used to develop the client. And it has been programmed in TypeScript. HTML5, CSS3 and Bootstrap have also been used. Node has been used for the server and has also been developed in TypeScript.
+Angular, a JavaScript framework has been used to develop the client. And it has been programmed in TypeScript. HTML5, CSS3 and Bootstrap have also been used. Node.js has been used for the server and has also been developed in TypeScript.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -392,10 +392,10 @@ Es muy utilizado en entornos de desarrollo web. Se la considera la base de datos
 Node~\cite{node} es un entorno de ejecución de JavaScript controlado por eventos asíncronos, diseñado para construir aplicaciones de red escalables.\\
 Fue creado por Ryan Dahl en 2009 y está influenciado por sistemas como Event Machine de Ruby ó Twisted de Python.
 
-Cuando se utiliza JavaScript en el lado del cliente, es el navegador quien, a través de un programa interno (un motor), interpreta el código JavaScript. De este mismo modo, Node proporciona un entorno de ejecución JavaScript del lado del servidor, haciendo uso del motor V8 de Google, que se encarga de interpretar el código y ejecutarlo. \\
+Cuando se utiliza JavaScript en el lado del cliente, es el navegador quien, a través de un programa interno (un motor), interpreta el código JavaScript. De este mismo modo, Node.js proporciona un entorno de ejecución JavaScript del lado del servidor, haciendo uso del motor V8 de Google, que se encarga de interpretar el código y ejecutarlo. \\
 El motor V8 es aquel que Google usa en su navegador Chrome y es posible descargarlo e incorporarlo a cualquier aplicación.
 
-Node está pensado para soportar concurrencias muy altas gracias a su naturaleza asíncrona. El modelo de concurrencia más común consiste en la utilización de hilos del sistema operativo. Se genera un nuevo hilo para cada conexión, de modo que a mayor cantidad de personas, mayor cantidad de recursos consumidos del servidor y mayor número de servidores son necesarios. Node emplea un único hilo y un bucle de eventos asíncrono. Las nuevas peticiones son tratadas como eventos en este bucle, sin que se produzca ningún tipo de bloqueo en el flujo de trabajo.
+Node.js está pensado para soportar concurrencias muy altas gracias a su naturaleza asíncrona. El modelo de concurrencia más común consiste en la utilización de hilos del sistema operativo. Se genera un nuevo hilo para cada conexión, de modo que a mayor cantidad de personas, mayor cantidad de recursos consumidos del servidor y mayor número de servidores son necesarios. Node.js emplea un único hilo y un bucle de eventos asíncrono. Las nuevas peticiones son tratadas como eventos en este bucle, sin que se produzca ningún tipo de bloqueo en el flujo de trabajo.
 
 
 \subsection{NPM}
@@ -411,7 +411,7 @@ NPM utiliza el archivo package.json para almacenar los datos relevantes a nuestr
 Express~\cite{express} es el framework más popular de Node.js y muchos otros \emph{frameworks} populares de Node.js están basados en él. Es rápido, minimalista y flexible, y proporciona todo lo necesario para crear tu servidor web sobre Node. Algunas características de Express son:
 \begin{itemize}
 \item Se comporta como un middleware para ayudar a administrar nuestros servidores y rutas.
-\item Amplia las funcionalidades del módulo HTTP que vienen por defecto con Node.
+\item Amplia las funcionalidades del módulo HTTP que vienen por defecto con Node.js.
 \item Permite a los usuarios configurar rutas para enviar y recibir solicitudes entre el front-end y la base de datos.
 \item Viene con un sistema de visualización que admite más de 14 motores de plantillas.
 \item Permite establecer ajustes de aplicaciones web como qué puerto usar, la localización de las plantillas que se utilizan, etc.
@@ -422,7 +422,7 @@ Express~\cite{express} es el framework más popular de Node.js y muchos otros \em
 \subsection{Promise-MySQL}
 \label{subsec:promise-MySQL}
 El módulo Promise-MySQL sirve para conectar Node.js con MySQL, dando soporte para la utilización de promesas de JavaScript.\\
-Se trata de un contenedor del controlador MySQLjs/MySQL de Node, que envuelve las llamadas con promesas Bluebird. Es decir, mientras el controlador MySQLjs/MySQL utiliza \emph{callbacks}, promise-msqy soporta promesas.
+Se trata de un contenedor del controlador MySQLjs/MySQL de Node.js, que envuelve las llamadas con promesas Bluebird. Es decir, mientras el controlador MySQLjs/MySQL utiliza \emph{callbacks}, promise-msqy soporta promesas.
 
 
 \subsection{Jsonwebtoken}
@@ -1121,8 +1121,7 @@ Como se ha dicho, al finalizar la ronda se restan los muertos a las tropas de ca
 
 \vspace{0.7cm}
 
-El número máximo de rondas viene dado, bien por un valor fijo de 250 rondas, bien por un límite
-de tropas perdidas del 85\% por parte de alguno de los jugadores.
+El número máximo de rondas viene dado, bien por un valor fijo de 250 rondas, bien por un límite de tropas perdidas del 85\% por parte de alguno de los jugadores.
 
 \vspace{0.3cm}
 Al finalizar el combate se restan las tropas totales muertas de cada jugador y el poder perdido con esas tropas muertas.
@@ -1245,7 +1244,7 @@ Además de todo esto, durante el desarrollo utilicé otras herramientas que tampoc
 \section{Trabajos futuros}
 \label{sec:trabajos_futuros}
 
-Este aplicación es solo el comienzo de lo que podría llegar a ser este juego. A un software siempre se le pueden realizar mejoras o añadir nuevas funcionalidades, y como tal, este juego no se queda atrás.
+Esta aplicación es solo el comienzo de lo que podría llegar a ser este juego. A un software siempre se le pueden realizar mejoras o añadir nuevas funcionalidades, y como tal, este juego no se queda atrás.
 
 Para empezar, la parte más importante que se podría añadir a este juego sería una interfaz visual atractiva, que incluyera mapas e imágenes completas de ciudades, batallas que pudieran visualizarse, etc.
 Y en estos mapas no tendrían por qué contener solo las ciudades de los jugadores, o limitarnos a movernos entre ellas, podría haber otros elementos como por ejemplo mares y barcos para poder cruzar, etc.
@@ -1256,7 +1255,7 @@ Las batallas se podrían modificar de forma que el jugador tomara más partido en 
 
 Habría multitud de nuevas posibilidades.
 
-Como ya he dicho también el acceso de los jugadores no está limitado, cada jugador puede tener el número de cuentas que desee, esto podría modificarse y establecer un límite de cuenta por persona.
+Como ya he dicho también, el acceso de los jugadores no está limitado, cada jugador puede tener el número de cuentas que desee, esto podría modificarse y establecer un límite de cuenta por persona.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1291,7 +1290,7 @@ sudo apt-get install Node.js
 \end{verbatim}
 }
 
-\textbf{ Instalación de Angular Cli}
+\textbf{ Instalación de Angular CLI}
 {\footnotesize
 \begin{verbatim}
 sudo npm install -g @angular/cli
@@ -1302,23 +1301,22 @@ sudo npm install -g @angular/cli
 \textbf{ Instalación de MySQL}
 {\footnotesize
 \begin{verbatim}
-sudo apt update
-sudo apt install MySQL-server
-sudo MySQL_secure_installation
+sudo apt install mysql-server
+sudo mysql_secure_installation
 \end{verbatim}
 }
 Con este último comando se entra en una pantalla de configuraciones. Seleccione la opción 0 e introduzca la contraseña 'dbpro2019'. A continuación pulse Y y luego Enter para el resto de configuraciones.\\
 Después es necesario ejecutar los siguientes comandos:
 {\footnotesize
 \begin{verbatim}
-sudo MySQL
-ALTER USER 'root'@'localhost' IDENTIFIED WITH MySQL_native_password
+sudo mysql
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password
 	 BY 'dbpro2019';
 FLUSH PRIVILEGES;
 exit
 \end{verbatim}
 }
-Se puede elegir una contraseña diferente pero habría que modificar el fichero server/src/keys.ts, donde está incluida la contraseña.
+Si se desea elegir un usuario o contraseña diferentes habría que modificar el fichero server/src/keys.ts, donde están incluidos.
 
 \vspace{0.3cm}
 \textbf{ Creación de la base de datos}
@@ -1327,7 +1325,7 @@ Es necesario crear y rellenar la base datos con los contenidos del juego. Partie
 {\footnotesize
 \begin{verbatim}
 	cd database
-	MySQL -u root -p // introducimos contraseña, dbpro2019.
+	mysql -u root -p // introducimos contraseña, dbpro2019.
 	source database.sql
 \end{verbatim}
 }
